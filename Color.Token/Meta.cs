@@ -41,6 +41,7 @@
 			"export",
 			"extern",
 			"false",
+			"final",
 			"float",
 			"for",
 			"friend",
@@ -57,6 +58,7 @@
 			"noexcept",
 			"nullptr",
 			"operator",
+			"override",
 			"private",
 			"protected",
 			"public",
@@ -77,6 +79,8 @@
 			"this",
 			"thread_local",
 			"throw",
+			"transaction_safe",
+			"transaction_safe_dynamic",
 			"true",
 			"try",
 			"typedef",
@@ -89,11 +93,7 @@
 			"void",
 			"volatile",
 			"wchar_t",
-			"while",
-			"override",
-			"final",
-			"transaction_safe",
-			"transaction_safe_dynamic"
+			"while"
 		};
 	}
 }
