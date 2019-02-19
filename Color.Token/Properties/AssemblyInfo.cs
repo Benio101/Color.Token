@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Color.Token")]
 [assembly: AssemblyDescription("Color Tokens.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Benio.me")]
+[assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Color.Token")]
 [assembly: AssemblyCopyright("CC BY 4")]
 [assembly: AssemblyTrademark("")]
