@@ -6,6 +6,7 @@
         <Description xml:space="preserve">Color Tokens.</Description>
         <License>License.txt</License>
         <Icon>Logo.ico</Icon>
+        <PreviewImage>Preview.png</PreviewImage>
         <Tags>Color</Tags>
     </Metadata>
     <Installation>
