@@ -13,12 +13,12 @@ New entries will appear in `Tools` → `Options` → `Fonts and Colors` → `Tex
 
 ## Developer note
 Extension is meant to be lightweight. Number of [`IClassifier.GetClassificationSpans`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.visualstudio.text.classification.iclassifier.getclassificationspans?view=visualstudiosdk-2017) calls is limited by filtering tokens:
-1. [`¶`](https://github.com/Benio101/Color.Token/blob/d4564126248f771c9a0a60f481b763ecd16c8c50/Color.Token/Classifier.cs#L62) Token can't match simplified single line comment pattern.
-1. [`¶`](https://github.com/Benio101/Color.Token/blob/d4564126248f771c9a0a60f481b763ecd16c8c50/Color.Token/Classifier.cs#L63) Token can't match simplified single line preprocessor directive pattern.
+1. [`¶`](https://github.com/Benio101/Color.Token/blob/23311b3d6897e8069f0a3b572d1d19dffafbaa73/Color.Token/Classifier.cs#L59) Token can't match simplified single line comment pattern.
+1. [`¶`](https://github.com/Benio101/Color.Token/blob/23311b3d6897e8069f0a3b572d1d19dffafbaa73/Color.Token/Classifier.cs#L60) Token can't match simplified single line preprocessor directive pattern.
 1. [`¶`](https://github.com/Benio101/Color.Token/blob/d4564126248f771c9a0a60f481b763ecd16c8c50/Color.Token/Utils.cs#L31) Token can't be immediatelly preceded nor followed by `Identifier` (MSVC specific: can contain `$`).
 1. [`¶`](https://github.com/Benio101/Color.Token/blob/d4564126248f771c9a0a60f481b763ecd16c8c50/Color.Token/Utils.cs#L60) Token can't match simplified pattern for being inside string literal.
 
-[`¶`](https://github.com/Benio101/Color.Token/blob/d4564126248f771c9a0a60f481b763ecd16c8c50/Color.Token/Classifier.cs#L81) Finally, Token must be classified as `Keyword` by `IClassifier` (even if it's not a Keyword according to specification).
+[`¶`](https://github.com/Benio101/Color.Token/blob/23311b3d6897e8069f0a3b572d1d19dffafbaa73/Color.Token/Classifier.cs#L75) Finally, Token must be classified as `Keyword` by `IClassifier` (even if it's not a Keyword according to specification).
 
 ```
 In certain rare and uncommon cases, it's possible that a Token won't be matched by extension.
