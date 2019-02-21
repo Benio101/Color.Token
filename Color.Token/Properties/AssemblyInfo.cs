@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Color.Token")]
-[assembly: AssemblyDescription("Color Tokens.")]
+[assembly: AssemblyDescription("Color C++ Tokens.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Color.Token")]

@@ -3,7 +3,7 @@
     <Metadata>
         <Identity Id="Color.Token" Version="0.0.2" Language="en-US" Publisher="Paweł Benetkiewicz" />
         <DisplayName>Color.Token</DisplayName>
-        <Description xml:space="preserve">Color Tokens.</Description>
+        <Description xml:space="preserve">Color C++ Tokens.</Description>
         <License>License.txt</License>
         <Icon>Logo.ico</Icon>
         <PreviewImage>Preview.png</PreviewImage>
