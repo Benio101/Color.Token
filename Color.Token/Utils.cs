@@ -56,9 +56,5 @@ namespace Color.Token
 
 			+ @"))"
 		;
-
-		internal static bool IsInsideStringLiteral(string Text){
-			return new Regex(@"(?<!\\)""").Matches(Text).Count % 2 > 0;
-		}
 	}
 }

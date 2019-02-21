@@ -18,9 +18,8 @@ namespace Color.Token
 		public event EventHandler<ClassificationChangedEventArgs> ClassificationChanged;
 		#pragma warning restore 67
 
-		private readonly Dictionary<string, IClassificationType> Tokens
-			= new Dictionary<string, IClassificationType>()
-		;
+		private readonly Dictionary<string, IClassificationType> Tokens =
+			new Dictionary<string, IClassificationType>();
 
 		internal Classifier(
 			IClassificationTypeRegistryService Registry,
@@ -56,31 +55,33 @@ namespace Color.Token
 			if (Span.IsEmpty) return Spans;
 			string Text = Span.GetText();
 
-			if (new Regex(@"^\t*//").IsMatch(Text)) return Spans; // C++ comment
-			if (new Regex(@"^\t*#").IsMatch(Text))  return Spans; // C directive
-
 			foreach (string Token in Meta.List){
 				foreach (Match Match in new Regex(
 						@"(?<!" + Utils.Identifier + @")"
-					+	@"(?<Token>" + Token + @")"
+					+	@"(?<Token>" + Token       + @")"
 					+	@"(?!"  + Utils.Identifier + @")"
-				).Matches(Text)){
-					if (Utils.IsInsideStringLiteral(
-						Text.Substring(0, Match.Groups["Token"].Index)
-					)) continue;
+				).Matches(Text))
+				{
+					var MatchedSpan = new SnapshotSpan(
+						Span.Snapshot, new Span(Span.Start + Match.Index, Match.Length)
+					);
 
-					var CurrentSpans = IClassifier.GetClassificationSpans(Span);
-					foreach(ClassificationSpan CurrentSpan in CurrentSpans){
-						var Name = CurrentSpan.ClassificationType.Classification;
-						if(Name == PredefinedClassificationTypeNames.Keyword){
-							Spans.Add(new ClassificationSpan(new SnapshotSpan(
-								Span.Snapshot, new Span(
-									Span.Start + Match.Groups["Token"].Index,
-									Match.Groups["Token"].Length
-								)), Tokens[Token]
-							));
+					var Intersections = IClassifier.GetClassificationSpans(MatchedSpan);
+					foreach (ClassificationSpan Intersection in Intersections){
+						var Classification = Intersection.ClassificationType.Classification;
+						if (Classification != PredefinedClassificationTypeNames.Keyword){
+							goto NextToken;
 						}
 					}
+
+					Spans.Add(new ClassificationSpan(new SnapshotSpan(
+						Span.Snapshot, new Span(
+							Span.Start + Match.Groups["Token"].Index,
+							Match.Groups["Token"].Length
+						)), Tokens[Token]
+					));
+
+					NextToken:;
 				}
 			}
 
