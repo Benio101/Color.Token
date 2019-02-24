@@ -1,5 +1,10 @@
 # Color.Token
-[Visual Studio](https://visualstudio.microsoft.com) extension: [C++] Color Tokens.
+[Visual Studio](https://visualstudio.microsoft.com) extension: Color C++ Tokens.
+
+## Status
+| Branch | Build Status
+| ---   | ---
+| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo?svg=true)](https://ci.appveyor.com/project/Benio101/color-token)
 
 ## Description
 Extension adds options to overwrite colors of certain C++ Tokens in files of `ContentType` `"C/C++"`, _eg_ `.cpp` or `.h` files.
