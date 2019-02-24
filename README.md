@@ -1,12 +1,10 @@
-<img align="right" src="https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/Logo.ico">
-
-# Color.Token
+# <img align="right" src="https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/Logo.ico"> Color.Token
 [Visual Studio](https://visualstudio.microsoft.com) extension: Color C++ Tokens.
 
 ## Status
 | Branch | Build Status
 | ---   | ---
-| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo?svg=true)](https://ci.appveyor.com/project/Benio101/color-token)
+| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/master?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/master)
 
 ## Description
 Extension adds options to overwrite colors of certain C++ Tokens in files of `ContentType` `"C/C++"`, _eg_ `.cpp` or `.h` files.
