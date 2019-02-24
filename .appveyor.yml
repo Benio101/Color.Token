@@ -1,2 +1,2 @@
 before_build:
-- cmd: nuget restore Color.Token.sln
+  - nuget restore
