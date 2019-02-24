@@ -1,3 +1,5 @@
+<img align="right" src="https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/Logo.ico">
+
 # Color.Token
 [Visual Studio](https://visualstudio.microsoft.com) extension: Color C++ Tokens.
 
