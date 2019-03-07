@@ -16,6 +16,11 @@ New entries will appear in `Tools` → `Options` → `Fonts and Colors` → `Tex
 
 ![](https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/Preview.png)
 
+## Preview
+| Default Tokens without extension | Color Tokens with extension enabled
+| --- | ---
+| ![](https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/PreviewDisabled.png) | ![](https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/PreviewEnabled.png)
+
 ## List of Tokens
 Extension exposes following Tokens for customization:
 - All [keyword](https://en.cppreference.com/w/cpp/keyword)s, except:
