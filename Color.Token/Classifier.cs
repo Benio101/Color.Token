@@ -56,9 +56,14 @@ namespace Color.Token
 			string Text = Span.GetText();
 
 			foreach (string Token in Meta.List){
+				string TokenName = Token;
+
+				// Alternative form: asm
+				if (Token == "asm") TokenName = "_{0,2}" + Token + "_{0,2}";
+
 				foreach (Match Match in new Regex(
 						@"(?<!" + Utils.Identifier + @")"
-					+	@"(?<Token>" + Token       + @")"
+					+	@"(?<Token>" + TokenName   + @")"
 					+	@"(?!"  + Utils.Identifier + @")"
 				).Matches(Text))
 				{

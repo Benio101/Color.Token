@@ -35,7 +35,7 @@ Full list of customizable Tokens, with their default colors:
 | :---                       | :---      | :---       | :---          |
 | `alignas`                  | Keyword   | Blue       | 128, 176, 224 |
 | `alignof`                  | Keyword   | Blue       | 128, 176, 224 |
-| `asm`                      | Assembler | Purple     | 176, 128, 224 |
+| <a id="asm"></a>[`asm`](#asm-note)     | Assembler | Purple     | 176, 128, 224 |
 | `atomic_cancel`            | Keyword   | Blue       | 128, 176, 224 |
 | `atomic_commit`            | Keyword   | Blue       | 128, 176, 224 |
 | `atomic_noexcept`          | Keyword   | Blue       | 128, 176, 224 |
@@ -123,3 +123,6 @@ Full list of customizable Tokens, with their default colors:
 | `volatile`                 | Keyword   | Blue       | 128, 176, 224 |
 | `wchar_t`                  | Type      | Green      | 176, 224, 128 |
 | `while`                    | Flow      | Dark Blue  |  96, 128, 224 |
+
+## Notes
+- <a id="asm-note"></a>[`asm`](#asm) can be preceded or succeded by up to two underscore characters (U+005F, `_`), _eg_ `__asm`.
