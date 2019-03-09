@@ -86,5 +86,20 @@ namespace Color.Token
 
 			return IsClassifiedAs(Source, new string[]{Search});
 		}
+
+		// Check if $Source classifications contains classification that matches $Search.
+		internal static bool IsClassifiedAs(string[] Source, Regex Search){
+			if (Source.Length == 0) return false;
+
+			foreach (string SourceClassification in Source){
+				string SourceEntry = SourceClassification.ToLower();
+
+				if(Search.IsMatch(SourceEntry)){
+					return true;
+				}
+			}
+
+			return false;
+		}
 	}
 }
