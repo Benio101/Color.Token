@@ -56,5 +56,35 @@ namespace Color.Token
 
 			+ @"))"
 		;
+
+		// Check if $Source classifications contains any classification from $Search.
+		internal static bool IsClassifiedAs(string[] Source, string[] Search){
+			if (Source.Length == 0) return false;
+			if (Search.Length == 0) return false;
+
+			foreach (string SourceClassification in Source){
+				foreach (string SearchClassification in Search){
+					string SourceEntry = SourceClassification.ToLower();
+					string SearchEntry = SearchClassification.ToLower();
+
+					if(
+							SourceEntry == SearchEntry
+						||	SourceEntry.StartsWith(SearchEntry + ".")
+					){
+						return true;
+					}
+				}
+			}
+
+			return false;
+		}
+
+		// Check if $Source classifications contains $Search classification.
+		internal static bool IsClassifiedAs(string[] Source, string Search){
+			if (Source.Length == 0) return false;
+			if (Search.Length == 0) return false;
+
+			return IsClassifiedAs(Source, new string[]{Search});
+		}
 	}
 }
