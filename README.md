@@ -125,4 +125,4 @@ Full list of customizable Tokens, with their default colors:
 | `while`                    | Flow      | Dark Blue  |  96, 128, 224 |
 
 ## Notes
-- <a id="asm-note"></a>[`asm`](#asm) can be preceded or succeded by up to two underscore characters (U+005F, `_`), _eg_ `__asm`.
+- <a id="asm-note"></a>[`asm`](#asm) can be preceded or followed by up to two underscore characters (U+005F, `_`), _eg_ `__asm`.
