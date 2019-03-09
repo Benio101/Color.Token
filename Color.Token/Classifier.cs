@@ -66,10 +66,37 @@ namespace Color.Token
 						Span.Snapshot, new Span(Span.Start + Match.Index, Match.Length)
 					);
 
-					var Intersections = IClassifier.GetClassificationSpans(MatchedSpan);
+					var Intersections = IClassifier.GetClassificationSpans(Span);
 					foreach (ClassificationSpan Intersection in Intersections){
-						var Classification = Intersection.ClassificationType.Classification;
-						if (Classification != PredefinedClassificationTypeNames.Keyword){
+						if (!Intersection.Span.OverlapsWith(MatchedSpan)){
+							continue;
+						}
+
+						var Classifications = Intersection.ClassificationType.Classification.Split(
+							new[]{" - "}, StringSplitOptions.None
+						);
+
+						// Token must be classified as "keyword".
+						if (!Utils.IsClassifiedAs(
+							Classifications, PredefinedClassificationTypeNames.Keyword
+						)){
+							goto NextToken;
+						}
+
+						// Token can't be classified as neither
+						// "preprocessor keyword" nor "Attribute".
+						if (Utils.IsClassifiedAs(Classifications, new string[]{
+							PredefinedClassificationTypeNames.PreprocessorKeyword,
+							"Attribute",
+						})){
+							goto NextToken;
+						}
+
+						// Token classification can't begin with "cpp"
+						// (except inactive code classification).
+						if (Utils.IsClassifiedAs(Classifications, new Regex(
+							@"^cpp(!=InactiveCodeClassification)"
+						))){
 							goto NextToken;
 						}
 					}
