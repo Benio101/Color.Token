@@ -100,7 +100,9 @@ namespace Color.Token
 						// Token classification can't begin with "cpp"
 						// (except inactive code classification).
 						if (Utils.IsClassifiedAs(Classifications, new Regex(
-							@"^cpp(!=InactiveCodeClassification)"
+							@"^cpp(?!InactiveCodeClassification)"
+
+							,	RegexOptions.IgnoreCase
 						))){
 							goto NextToken;
 						}
