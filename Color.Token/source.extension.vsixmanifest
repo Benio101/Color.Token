@@ -7,7 +7,7 @@
         <License>License.txt</License>
         <Icon>Logo.ico</Icon>
         <PreviewImage>Preview.png</PreviewImage>
-        <Tags>Color</Tags>
+        <Tags>C++, Color, Token</Tags>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,)" />
