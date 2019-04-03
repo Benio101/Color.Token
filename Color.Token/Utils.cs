@@ -4,8 +4,8 @@ namespace Color.Token
 {
 	internal static class Utils
 	{
-		// Characters of @Identifier that can be on every place (even on first character).
-		internal static readonly string IdentifierCommonCharacters
+		// All characters that C++ Identifier can contain (MSVC specific — includes `$`).
+		internal static readonly string IdentifierCharacter
 
 			= @"(["
 
@@ -24,37 +24,10 @@ namespace Color.Token
 				+ @"\u2E80-\u2FFF\u3004-\u3007\u3021-\u302F\u3031-\u303F\u3040-\uD7FF\uF900-\uFD3D"
 				+ @"\uFD40-\uFDCF\uFDF0-\uFE1F\uFE30-\uFE44\uFE47-\uFFFD"
 
+				// Not allowed as first character
+				+ @"0-9" + @"\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F"
+
 			+ @"])"
-		;
-
-		// Simplified C++ identifier pattern (MSVC specific — includes `$`).
-		internal static readonly string Identifier
-
-			= @"("
-
-				// Identifier cannot begin with underscore immnediatelly followed by upper letter.
-				+ @"(?!_\p{Lu})"
-
-				// Identifier cannot contain sequence of two underscores.
-				+ @"(?!.*__)"
-
-			+ @"("
-
-				// First character (exactly one)
-				+ IdentifierCommonCharacters
-
-				// Next characters (any number)
-				+ @"("
-
-					+ IdentifierCommonCharacters
-					+ @"|["
-
-					// Not allowed as first character
-					+ @"0-9" + @"\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F"
-
-				+ @"])*"
-
-			+ @"))"
 		;
 
 		// Check if $Source classifications contains any classification from $Search.

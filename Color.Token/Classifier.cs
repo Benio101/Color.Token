@@ -62,9 +62,9 @@ namespace Color.Token
 				if (Token == "asm") TokenName = "_{0,2}" + Token + "_{0,2}";
 
 				foreach (Match Match in new Regex(
-						@"(?<!" + Utils.Identifier + @")"
+						@"(?<!" + Utils.IdentifierCharacter + @")"
 					+	@"(?<Token>" + TokenName   + @")"
-					+	@"(?!"  + Utils.Identifier + @")"
+					+	@"(?!"  + Utils.IdentifierCharacter + @")"
 				).Matches(Text))
 				{
 					var MatchedSpan = new SnapshotSpan(
