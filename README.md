@@ -21,6 +21,13 @@ New entries will appear in `Tools` → `Options` → `Fonts and Colors` → `Tex
 | --- | ---
 | ![](https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/PreviewDisabled.png) | ![](https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/PreviewEnabled.png)
 
+## Options
+### Color macros
+ - Type: `bool`
+ - Default: `false`
+
+Color macros which text is exact as tokens (_eg_ color `bool` macro defined by `stdbool.h` header in C).
+
 ## List of Tokens
 Extension exposes following Tokens for customization:
 - All [keyword](https://en.cppreference.com/w/cpp/keyword)s, except:
