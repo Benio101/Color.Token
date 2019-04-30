@@ -12,7 +12,7 @@ namespace Color.Token
 		: IClassifier
 	{
 		private bool IsClassificationRunning;
-		private IClassifier IClassifier;
+		private readonly IClassifier IClassifier;
 
 		#pragma warning disable 67
 		public event EventHandler<ClassificationChangedEventArgs> ClassificationChanged;
@@ -81,7 +81,6 @@ namespace Color.Token
 							new[]{" - "}, StringSplitOptions.None
 						);
 
-						// Token must be classified as "keyword".
 						if (!Utils.IsClassifiedAs(
 							Classifications, PredefinedClassificationTypeNames.Keyword
 						)){
@@ -95,6 +94,14 @@ namespace Color.Token
 							"Attribute",
 						})){
 							goto NextToken;
+						}
+
+						if(
+								Options.ColorMacro
+							&&	Utils.IsClassifiedAs(Classifications, "cppMacro")
+						){
+							// Token can be also classified as "macro".
+							continue;
 						}
 
 						// Token classification can't begin with "cpp"
