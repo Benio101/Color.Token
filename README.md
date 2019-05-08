@@ -10,7 +10,9 @@
 Extension adds options to overwrite colors of certain C++ Tokens in files of `ContentType` `"C/C++"`, _eg_ `.cpp` or `.h` files.
 
 ## Usage
-New entries will appear in `Tools` → `Options` → `Fonts and Colors` → `Text Editor`, each will begin with `C++ Token:` prefix.
+New entries will appear in `Tools` → `Options` → `Environment` → `Fonts and Colors` → `Text Editor`.<br>
+Each will begin with `C++ Token:` prefix.
+
 - Edit their color values, until you want to keep extension default ones (listed below).
 - If you don't want to change some token's color at all, set it's `Item foreground` value to `Automatic`.
 
@@ -21,12 +23,15 @@ New entries will appear in `Tools` → `Options` → `Fonts and Colors` → `Tex
 | --- | ---
 | ![](https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/PreviewDisabled.png) | ![](https://raw.githubusercontent.com/Benio101/Color.Token/master/Color.Token/PreviewEnabled.png)
 
-## Options
-### Color macros
- - Type: `bool`
- - Default: `false`
+## Option
+New entry will appear in `Tools` → `Options` → `Color.Token`.
 
+### Color macros (`bool`, default: `false`)
 Color macros which text is exact as tokens (_eg_ color `bool` macro defined by `stdbool.h` header in C).
+
+### Note
+Note that editing option does not take immediate effect to keep performance.
+It requires reclassification, _eg_ triggered by editing corresponding part of code, reopening file or cut and pasting file's content.
 
 ## List of Tokens
 Extension exposes following Tokens for customization:
