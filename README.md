@@ -7,7 +7,8 @@
 | `master` | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/master?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/master)
 
 ## Description
-Extension adds options to overwrite colors of certain C++ Tokens in files of `ContentType` `"C/C++"`, _eg_ `.cpp` or `.h` files.
+Extension adds options to overwrite colors of certain C++ Tokens.<br>
+Extension works in files of `ContentType` `"C/C++"`, _eg_ `.cpp` or `.h` files.
 
 ## Usage
 New entries will appear in `Tools` → `Options` → `Environment` → `Fonts and Colors` → `Text Editor`.<br>
@@ -30,8 +31,8 @@ New entry will appear in `Tools` → `Options` → `Color.Token`.
 Color macros which text is exact as tokens (_eg_ color `bool` macro defined by `stdbool.h` header in C).
 
 ### Note
-Note that editing option does not take immediate effect to keep performance.
-It requires reclassification, _eg_ triggered by editing corresponding part of code, reopening file or cut and pasting file's content.
+Note that editing option does not take immediate effect to keep performance.<br>
+It requires reclassification, _eg_ triggered by editing corresponding part of code.
 
 ## List of Tokens
 Extension exposes following Tokens for customization:
