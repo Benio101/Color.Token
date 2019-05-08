@@ -12,7 +12,7 @@ namespace Color.Token
 		PackageAutoLoadFlags.BackgroundLoad
 	)]
 	[PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
-	[InstalledProductRegistration("#110", "#112", "1.2.0.1", IconResourceID = 400)]
+	[InstalledProductRegistration("#110", "#112", "1.2.1", IconResourceID = 400)]
 	[ProvideMenuResource("Menus.ctmenu", 1)]
 	[Guid("0000436F-6C6F-722E-546F-6B656E2E6374")]
 	[ProvideOptionPage(typeof(OptionsPage), "Color.Token", "Options", 0, 0, true)]
