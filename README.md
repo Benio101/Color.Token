@@ -7,7 +7,8 @@
 | `master` | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/master?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/master)
 
 ## Description
-Extension adds options to overwrite colors of certain C++ Tokens in files of `ContentType` `"C/C++"`, _eg_ `.cpp` or `.h` files.
+Extension adds options to overwrite colors of certain C++ Tokens.<br>
+Extension works in files of `ContentType` `"C/C++"`, _eg_ `.cpp` or `.h` files.
 
 ## Usage
 New entries will appear in `Tools` → `Options` → `Environment` → `Fonts and Colors` → `Text Editor`.<br>
