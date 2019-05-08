@@ -7,7 +7,10 @@ using Microsoft.VisualStudio.Shell;
 
 namespace Color.Token
 {
-	[ProvideAutoLoad(VSConstants.UICONTEXT.VCProject_string, PackageAutoLoadFlags.BackgroundLoad)]
+	[ProvideAutoLoad(
+		VSConstants.UICONTEXT.ShellInitialized_string,
+		PackageAutoLoadFlags.BackgroundLoad
+	)]
 	[PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
 	[InstalledProductRegistration("#110", "#112", "1.2.0.1", IconResourceID = 400)]
 	[ProvideMenuResource("Menus.ctmenu", 1)]
