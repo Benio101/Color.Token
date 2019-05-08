@@ -31,8 +31,8 @@ New entry will appear in `Tools` → `Options` → `Color.Token`.
 Color macros which text is exact as tokens (_eg_ color `bool` macro defined by `stdbool.h` header in C).
 
 ### Note
-Note that editing option does not take immediate effect to keep performance.
-It requires reclassification, _eg_ triggered by editing corresponding part of code, reopening file or cut and pasting file's content.
+Note that editing option does not take immediate effect to keep performance.<br>
+It requires reclassification, _eg_ triggered by editing corresponding part of code.
 
 ## List of Tokens
 Extension exposes following Tokens for customization:
