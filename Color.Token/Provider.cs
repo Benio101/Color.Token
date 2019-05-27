@@ -23,7 +23,7 @@ namespace Color.Token
 
 		#pragma warning restore 649
 
-		private static bool IgnoreRequest = false;
+		private static bool IgnoreRequest;
 
 		public IClassifier GetClassifier(ITextBuffer Buffer)
 		{
@@ -33,15 +33,13 @@ namespace Color.Token
 			{
 				IgnoreRequest = true;
 
-				return Buffer.Properties.GetOrCreateSingletonProperty<Classifier>
+				return Buffer.Properties.GetOrCreateSingletonProperty
 				(
-					delegate
-					{
-						return new Classifier(
-							ClassificationTypeRegistryService,
-							ClassifierAggregatorService.GetClassifier(Buffer)
-						);
-					}
+					() => new Classifier
+					(
+						ClassificationTypeRegistryService,
+						ClassifierAggregatorService.GetClassifier(Buffer)
+					)
 				);
 			}
 

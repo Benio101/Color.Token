@@ -28,7 +28,7 @@ namespace Color.Token
 			IsClassificationRunning = false;
 			IClassifier = Classifier;
 
-			foreach (string Token in Meta.List){
+			foreach (var Token in Meta.List){
 				Tokens.Add(Token, Registry.GetClassificationType("Token." + Token));
 			}
 		}
@@ -53,18 +53,18 @@ namespace Color.Token
 			IList<ClassificationSpan> Spans = new List<ClassificationSpan>();
 
 			if (Span.IsEmpty) return Spans;
-			string Text = Span.GetText();
+			var Text = Span.GetText();
 
-			foreach (string Token in Meta.List){
-				string TokenName = Token;
+			foreach (var Token in Meta.List){
+				var TokenName = Token;
 
 				// Alternative form: asm
 				if (Token == "asm") TokenName = "_{0,2}" + Token + "_{0,2}";
 
 				foreach (Match Match in new Regex(
-						@"(?<!" + Utils.IdentifierCharacter + @")"
-					+	@"(?<Token>" + TokenName   + @")"
-					+	@"(?!"  + Utils.IdentifierCharacter + @")"
+						"(?<!" + Utils.IdentifierCharacter + ")"
+					+	"(?<Token>" + TokenName            + ")"
+					+	"(?!"  + Utils.IdentifierCharacter + ")"
 				).Matches(Text))
 				{
 					var MatchedSpan = new SnapshotSpan(
@@ -89,7 +89,7 @@ namespace Color.Token
 
 						// Token can't be classified as neither
 						// "preprocessor keyword" nor "Attribute".
-						if (Utils.IsClassifiedAs(Classifications, new string[]{
+						if (Utils.IsClassifiedAs(Classifications, new[]{
 							PredefinedClassificationTypeNames.PreprocessorKeyword,
 							"Attribute",
 						})){
@@ -107,7 +107,7 @@ namespace Color.Token
 						// Token classification can't begin with "cpp"
 						// (except inactive code classification).
 						if (Utils.IsClassifiedAs(Classifications, new Regex(
-							@"^cpp(?!InactiveCodeClassification)"
+							"^cpp(?!InactiveCodeClassification)"
 
 							,	RegexOptions.IgnoreCase
 						))){

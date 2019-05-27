@@ -1,16 +1,17 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Color.Token
 {
 	internal static class Utils
 	{
 		// All characters that C++ Identifier can contain (MSVC specific — includes `$`).
-		internal static readonly string IdentifierCharacter
+		internal const string IdentifierCharacter
 
-			= @"(["
+			= "(["
 
 				// ASCII
-				+ @"_a-zA-Z"
+				+ "_a-zA-Z"
 
 				// MSVC specific
 				+ @"\$"
@@ -25,54 +26,66 @@ namespace Color.Token
 				+ @"\uFD40-\uFDCF\uFDF0-\uFE1F\uFE30-\uFE44\uFE47-\uFFFD"
 
 				// Not allowed as first character
-				+ @"0-9" + @"\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F"
+				+ "0-9" + @"\u0300-\u036F\u1DC0-\u1DFF\u20D0-\u20FF\uFE20-\uFE2F"
 
-			+ @"])"
+			+ "])"
 		;
 
 		// Check if $Source classifications contains any classification from $Search.
-		internal static bool IsClassifiedAs(string[] Source, string[] Search){
-			if (Source.Length == 0) return false;
-			if (Search.Length == 0) return false;
+		internal static bool IsClassifiedAs
+		(
+			string[] Source,
+			string[] Search
+		){
+			return
+			(
+					Source.Length > 0
+				&&	Search.Length > 0
+				&&	(
+						from SourceClassification in Source
+						from SearchClassification in Search
 
-			foreach (string SourceClassification in Source){
-				foreach (string SearchClassification in Search){
-					string SourceEntry = SourceClassification.ToLower();
-					string SearchEntry = SearchClassification.ToLower();
+						let SourceEntry = SourceClassification.ToLower()
+						let SearchEntry = SearchClassification.ToLower()
 
-					if(
-							SourceEntry == SearchEntry
-						||	SourceEntry.StartsWith(SearchEntry + ".")
-					){
-						return true;
-					}
-				}
-			}
+						where
+						(
+								SourceEntry == SearchEntry
+							||	SourceEntry.StartsWith(SearchEntry + ".")
+						)
 
-			return false;
+						select SourceEntry
+					)
+
+					.Any()
+			);
 		}
 
 		// Check if $Source classifications contains $Search classification.
-		internal static bool IsClassifiedAs(string[] Source, string Search){
+		internal static bool IsClassifiedAs
+		(
+			string[] Source,
+			string   Search
+		){
 			if (Source.Length == 0) return false;
 			if (Search.Length == 0) return false;
 
-			return IsClassifiedAs(Source, new string[]{Search});
+			return IsClassifiedAs(Source, new[]{Search});
 		}
 
 		// Check if $Source classifications contains classification that matches $Search.
-		internal static bool IsClassifiedAs(string[] Source, Regex Search){
-			if (Source.Length == 0) return false;
-
-			foreach (string SourceClassification in Source){
-				string SourceEntry = SourceClassification.ToLower();
-
-				if(Search.IsMatch(SourceEntry)){
-					return true;
-				}
-			}
-
-			return false;
+		internal static bool IsClassifiedAs
+		(
+			string[] Source,
+			Regex    Search
+		){
+			return
+			(
+					Source.Length > 0
+				&&	Source.Select(SourceClassification => SourceClassification.ToLower())
+					
+					.Any(Search.IsMatch)
+			);
 		}
 	}
 }
