@@ -140,4 +140,4 @@ Full list of customizable Tokens, with their default colors:
 
 ## Notes
 - `asm` can be preceded or followed by up to two underscore characters (U+005F, `_`), _eg_ `__asm`.
-- `default` (switch statement) means `default` keyword is followed by `:` (possibly after whitespaces).
+- `default` (`switch` statement) means `default` keyword is followed by `:` (possibly after whitespaces).
