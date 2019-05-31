@@ -54,9 +54,9 @@ Full list of customizable Tokens, with their default colors:
 | `atomic_noexcept`                  | Keyword   | Blue       | 128, 176, 224 |
 | `auto`                             | Type      | Green      | 176, 224, 128 |
 | `bool`                             | Type      | Green      | 176, 224, 128 |
-| `break`                            | Flow      | Dark Blue  |  96, 128, 224 |
-| `case`                             | Flow      | Dark Blue  |  96, 128, 224 |
-| `catch`                            | Flow      | Dark Blue  |  96, 128, 224 |
+| `break`                            | Flow      | Dark Blue  | ​ 96, 128, 224 |
+| `case`                             | Flow      | Dark Blue  | ​ 96, 128, 224 |
+| `catch`                            | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `char`                             | Type      | Green      | 176, 224, 128 |
 | `char8_t`                          | Type      | Green      | 176, 224, 128 |
 | `char16_t`                         | Type      | Green      | 176, 224, 128 |
@@ -67,18 +67,18 @@ Full list of customizable Tokens, with their default colors:
 | `consteval`                        | Keyword   | Blue       | 128, 176, 224 |
 | `constexpr`                        | Keyword   | Blue       | 128, 176, 224 |
 | `const_cast`                       | Keyword   | Blue       | 128, 176, 224 |
-| `continue`                         | Flow      | Dark Blue  |  96, 128, 224 |
-| `co_await`                         | Flow      | Dark Blue  |  96, 128, 224 |
-| `co_return`                        | Flow      | Dark Blue  |  96, 128, 224 |
-| `co_yield`                         | Flow      | Dark Blue  |  96, 128, 224 |
+| `continue`                         | Flow      | Dark Blue  | ​ 96, 128, 224 |
+| `co_await`                         | Flow      | Dark Blue  | ​ 96, 128, 224 |
+| `co_return`                        | Flow      | Dark Blue  | ​ 96, 128, 224 |
+| `co_yield`                         | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `decltype`                         | Keyword   | Blue       | 128, 176, 224 |
 | `default` (function definition)    | Keyword   | Blue       | 128, 176, 224 |
-| `default` (switch statement)       | Flow      | Dark Blue  |  96, 128, 224 |
-| `delete`                           | Important | Dark Red   | 224,  96,  96 |
-| `do`                               | Flow      | Dark Blue  |  96, 128, 224 |
+| `default` (`switch` statement)     | Flow      | Dark Blue  | ​ 96, 128, 224 |
+| `delete`                           | Important | Dark Red   | 224, ​ 96, ​ 96 |
+| `do`                               | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `double`                           | Type      | Green      | 176, 224, 128 |
 | `dynamic_cast`                     | Keyword   | Blue       | 128, 176, 224 |
-| `else`                             | Flow      | Dark Blue  |  96, 128, 224 |
+| `else`                             | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `enum`                             | Keyword   | Blue       | 128, 176, 224 |
 | `explicit`                         | Keyword   | Blue       | 128, 176, 224 |
 | `export`                           | Keyword   | Blue       | 128, 176, 224 |
@@ -86,10 +86,10 @@ Full list of customizable Tokens, with their default colors:
 | `false`                            | Static    | Red        | 224, 128, 128 |
 | `final`                            | Keyword   | Blue       | 128, 176, 224 |
 | `float`                            | Type      | Green      | 176, 224, 128 |
-| `for`                              | Flow      | Dark Blue  |  96, 128, 224 |
+| `for`                              | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `friend`                           | Keyword   | Blue       | 128, 176, 224 |
-| `goto`                             | Flow      | Dark Blue  |  96, 128, 224 |
-| `if`                               | Flow      | Dark Blue  |  96, 128, 224 |
+| `goto`                             | Flow      | Dark Blue  | ​ 96, 128, 224 |
+| `if`                               | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `import`                           | Keyword   | Blue       | 128, 176, 224 |
 | `inline`                           | Keyword   | Blue       | 128, 176, 224 |
 | `int`                              | Type      | Green      | 176, 224, 128 |
@@ -97,18 +97,18 @@ Full list of customizable Tokens, with their default colors:
 | `module`                           | Keyword   | Blue       | 128, 176, 224 |
 | `mutable`                          | Keyword   | Blue       | 128, 176, 224 |
 | `namespace`                        | Keyword   | Blue       | 128, 176, 224 |
-| `new`                              | Important | Dark Red   | 224,  96,  96 |
+| `new`                              | Important | Dark Red   | 224, ​ 96, ​ 96 |
 | `noexcept`                         | Keyword   | Blue       | 128, 176, 224 |
 | `nullptr`                          | Static    | Red        | 224, 128, 128 |
 | `operator`                         | Keyword   | Blue       | 128, 176, 224 |
 | `override`                         | Keyword   | Blue       | 128, 176, 224 |
-| `private`                          | Access    | Dark Green | 128, 176,  96 |
-| `protected`                        | Access    | Dark Green | 128, 176,  96 |
-| `public`                           | Access    | Dark Green | 128, 176,  96 |
+| `private`                          | Access    | Dark Green | 128, 176, ​ 96 |
+| `protected`                        | Access    | Dark Green | 128, 176, ​ 96 |
+| `public`                           | Access    | Dark Green | 128, 176, ​ 96 |
 | `reflexpr`                         | Keyword   | Blue       | 128, 176, 224 |
 | `reinterpret_cast`                 | Keyword   | Blue       | 128, 176, 224 |
 | `requires`                         | Keyword   | Blue       | 128, 176, 224 |
-| `return`                           | Flow      | Dark Blue  |  96, 128, 224 |
+| `return`                           | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `short`                            | Type      | Green      | 176, 224, 128 |
 | `signed`                           | Type      | Green      | 176, 224, 128 |
 | `sizeof`                           | Keyword   | Blue       | 128, 176, 224 |
@@ -116,16 +116,16 @@ Full list of customizable Tokens, with their default colors:
 | `static_assert`                    | Keyword   | Blue       | 128, 176, 224 |
 | `static_cast`                      | Keyword   | Blue       | 128, 176, 224 |
 | `struct`                           | Keyword   | Blue       | 128, 176, 224 |
-| `switch`                           | Flow      | Dark Blue  |  96, 128, 224 |
+| `switch`                           | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `synchronized`                     | Keyword   | Blue       | 128, 176, 224 |
 | `template`                         | Keyword   | Blue       | 128, 176, 224 |
 | `this`                             | Keyword   | Blue       | 128, 176, 224 |
 | `thread_local`                     | Keyword   | Blue       | 128, 176, 224 |
-| `throw`                            | Flow      | Dark Blue  |  96, 128, 224 |
+| `throw`                            | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `transaction_safe`                 | Keyword   | Blue       | 128, 176, 224 |
 | `transaction_safe_dynamic`         | Keyword   | Blue       | 128, 176, 224 |
 | `true`                             | Static    | Red        | 224, 128, 128 |
-| `try`                              | Flow      | Dark Blue  |  96, 128, 224 |
+| `try`                              | Flow      | Dark Blue  | ​ 96, 128, 224 |
 | `typedef`                          | Keyword   | Blue       | 128, 176, 224 |
 | `typeid`                           | Keyword   | Blue       | 128, 176, 224 |
 | `typename`                         | Keyword   | Blue       | 128, 176, 224 |
@@ -136,7 +136,7 @@ Full list of customizable Tokens, with their default colors:
 | `void`                             | Type      | Green      | 176, 224, 128 |
 | `volatile`                         | Keyword   | Blue       | 128, 176, 224 |
 | `wchar_t`                          | Type      | Green      | 176, 224, 128 |
-| `while`                            | Flow      | Dark Blue  |  96, 128, 224 |
+| `while`                            | Flow      | Dark Blue  | ​ 96, 128, 224 |
 
 ## Notes
 - `asm` can be preceded or followed by up to two underscore characters (U+005F, `_`), _eg_ `__asm`.
