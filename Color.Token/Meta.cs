@@ -31,6 +31,7 @@
 			"co_yield",
 			"decltype",
 			"default",
+			"default.statement",
 			"delete",
 			"do",
 			"double",

@@ -148,6 +148,11 @@ namespace Color.Token
 		Definition_Token_default;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.default.statement")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_default_statement;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Token.delete")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Token_delete;

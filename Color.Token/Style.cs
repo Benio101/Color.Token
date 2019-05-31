@@ -458,10 +458,27 @@ namespace Color.Token
 		: ClassificationFormatDefinition
 	{
 		public Format_Token_default(){
-			DisplayName = "C++ Token: \"default\"";
+			DisplayName = "C++ Token: \"default\" (function definition)";
 
 			BackgroundCustomizable = false;
 			ForegroundColor = Default.Colors.Keyword;
+		}
+	}
+
+	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Token.default.statement")]
+	[Name("Token.default.statement")]
+	[BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
+	[UserVisible(true)]
+	[Order(After = Priority.High)]
+	internal sealed class Format_Token_default_statement
+		: ClassificationFormatDefinition
+	{
+		public Format_Token_default_statement(){
+			DisplayName = "C++ Token: \"default\" (switch statement)";
+
+			BackgroundCustomizable = false;
+			ForegroundColor = Default.Colors.Flow;
 		}
 	}
 

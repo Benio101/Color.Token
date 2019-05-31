@@ -58,8 +58,27 @@ namespace Color.Token
 			foreach (var Token in Meta.List){
 				var TokenName = Token;
 
-				// Alternative form: asm
-				if (Token == "asm") TokenName = "_{0,2}" + Token + "_{0,2}";
+				// ReSharper disable once SwitchStatementMissingSomeCases
+				switch (Token)
+				{
+					// Alternative form: asm
+					case "asm":
+
+						TokenName = "_{0,2}" + Token + "_{0,2}";
+						break;
+
+					// default (function definition)
+					case "default":
+
+						TokenName = @"default(?![ \t\v\n\f]*:)";
+						break;
+
+					// default (switch statement)
+					case "default.statement":
+
+						TokenName = @"default(?=[ \t\v\n\f]*:)";
+						break;
+				}
 
 				foreach (Match Match in new Regex(
 						"(?<!" + Utils.IdentifierCharacter + ")"
@@ -72,7 +91,7 @@ namespace Color.Token
 					);
 
 					var Intersections = IClassifier.GetClassificationSpans(Span);
-					foreach (ClassificationSpan Intersection in Intersections){
+					foreach (var Intersection in Intersections){
 						if (!Intersection.Span.OverlapsWith(MatchedSpan)){
 							continue;
 						}
