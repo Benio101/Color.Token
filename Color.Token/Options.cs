@@ -12,7 +12,7 @@ namespace Color.Token
 				"Color macros which text is exact as tokens "
 			+	"(eg color `bool` macro defined by `stdbool.h` header in C)."
 		)]
-		public bool ColorMacro { get; } = false;
+		public bool ColorMacro { set; get; } = false;
 	}
 
 	internal static class Options
