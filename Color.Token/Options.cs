@@ -34,7 +34,10 @@ namespace Color.Token
 			{
 				var Package = Project.Package;
 				if (Package == null) return false;
-				if (!(Package.GetDialogPage(typeof(OptionsPage)) is OptionsPage Page)) return false;
+
+				var Page = (OptionsPage) Package.GetDialogPage(typeof(OptionsPage));
+				if (Page == null) return false;
+
 				return Page.ColorMacro;
 			}
 		}
