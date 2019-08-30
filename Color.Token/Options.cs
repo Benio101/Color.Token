@@ -1,18 +1,28 @@
-﻿using System.ComponentModel;
-using Microsoft.VisualStudio.Shell;
+﻿using Microsoft.VisualStudio.Shell;
+using System.ComponentModel;
 
 namespace Color.Token
 {
 	public sealed class OptionsPage
-		: DialogPage
+	:
+		DialogPage
 	{
-		[Category("Color.Token")]
-		[DisplayName("Color macros")]
-		[Description(
-				"Color macros which text is exact as tokens "
-			+	"(eg color `bool` macro defined by `stdbool.h` header in C)."
-		)]
+		[
+			Category    ("Color.Token"),
+			DisplayName ("Color macros"),
+			Description
+			(
+					"Color macros which text is exact as tokens "
+				+	"(eg color `bool` macro defined by `stdbool.h` header in C)."
+			)
+		]
+
+		// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
+		// Reason: Setter is automated by externals. Removing it shall made option readonly.
+
 		public bool ColorMacro { set; get; } = false;
+
+		// ReSharper restore AutoPropertyCanBeMadeGetOnly.Global
 	}
 
 	internal static class Options
@@ -23,9 +33,12 @@ namespace Color.Token
 			get
 			{
 				var Package = Project.Package;
+				if (Package == null) return false;
 
-				var Page = (OptionsPage) Package?.GetDialogPage(typeof(OptionsPage));
-				return Page != null && Page.ColorMacro;
+				var Page = Package.GetDialogPage(typeof(OptionsPage)) as OptionsPage;
+				if (Page == null) return false;
+
+				return Page.ColorMacro;
 			}
 		}
 	}
