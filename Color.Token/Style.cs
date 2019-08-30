@@ -12,7 +12,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_alignas
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_alignas()
 		{
@@ -30,7 +31,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_alignof
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_alignof()
 		{
@@ -48,7 +50,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_asm
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_asm()
 		{
@@ -66,7 +69,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_atomic_cancel
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_atomic_cancel()
 		{
@@ -84,7 +88,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_atomic_commit
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_atomic_commit()
 		{
@@ -102,7 +107,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_atomic_noexcept
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_atomic_noexcept()
 		{
@@ -120,7 +126,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_auto
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_auto()
 		{
@@ -138,7 +145,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_bool
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_bool()
 		{
@@ -156,7 +164,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_break
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_break()
 		{
@@ -174,7 +183,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_case
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_case()
 		{
@@ -192,7 +202,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_catch
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_catch()
 		{
@@ -210,7 +221,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_char
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_char()
 		{
@@ -228,7 +240,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_char8_t
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_char8_t()
 		{
@@ -246,7 +259,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_char16_t
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_char16_t()
 		{
@@ -264,7 +278,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_char32_t
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_char32_t()
 		{
@@ -282,7 +297,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_class
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_class()
 		{
@@ -300,7 +316,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_concept
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_concept()
 		{
@@ -318,7 +335,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_const
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_const()
 		{
@@ -336,7 +354,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_consteval
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_consteval()
 		{
@@ -354,7 +373,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_constexpr
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_constexpr()
 		{
@@ -372,7 +392,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_const_cast
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_const_cast()
 		{
@@ -390,7 +411,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_continue
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_continue()
 		{
@@ -408,7 +430,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_co_await
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_co_await()
 		{
@@ -426,7 +449,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_co_return
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_co_return()
 		{
@@ -444,7 +468,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_co_yield
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_co_yield()
 		{
@@ -462,7 +487,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_decltype
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_decltype()
 		{
@@ -480,7 +506,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_default
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_default()
 		{
@@ -498,7 +525,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_default_statement
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_default_statement()
 		{
@@ -516,7 +544,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_delete
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_delete()
 		{
@@ -534,7 +563,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_do
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_do()
 		{
@@ -552,7 +582,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_double
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_double()
 		{
@@ -570,7 +601,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_dynamic_cast
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_dynamic_cast()
 		{
@@ -588,7 +620,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_else
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_else()
 		{
@@ -606,7 +639,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_enum
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_enum()
 		{
@@ -624,7 +658,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_explicit
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_explicit()
 		{
@@ -642,7 +677,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_export
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_export()
 		{
@@ -660,7 +696,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_extern
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_extern()
 		{
@@ -678,7 +715,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_false
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_false()
 		{
@@ -696,7 +734,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_final
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_final()
 		{
@@ -714,7 +753,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_float
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_float()
 		{
@@ -732,7 +772,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_for
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_for()
 		{
@@ -750,7 +791,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_friend
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_friend()
 		{
@@ -768,7 +810,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_goto
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_goto()
 		{
@@ -786,7 +829,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_if
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_if()
 		{
@@ -804,7 +848,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_import
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_import()
 		{
@@ -822,7 +867,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_inline
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_inline()
 		{
@@ -840,7 +886,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_int
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_int()
 		{
@@ -858,7 +905,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_long
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_long()
 		{
@@ -876,7 +924,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_module
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_module()
 		{
@@ -894,7 +943,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_mutable
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_mutable()
 		{
@@ -912,7 +962,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_namespace
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_namespace()
 		{
@@ -930,7 +981,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_new
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_new()
 		{
@@ -948,7 +1000,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_noexcept
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_noexcept()
 		{
@@ -966,7 +1019,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_nullptr
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_nullptr()
 		{
@@ -984,7 +1038,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_operator
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_operator()
 		{
@@ -1002,7 +1057,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_override
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_override()
 		{
@@ -1020,7 +1076,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_private
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_private()
 		{
@@ -1038,7 +1095,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_protected
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_protected()
 		{
@@ -1056,7 +1114,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_public
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_public()
 		{
@@ -1074,7 +1133,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_reflexpr
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_reflexpr()
 		{
@@ -1092,7 +1152,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_reinterpret_cast
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_reinterpret_cast()
 		{
@@ -1110,7 +1171,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_requires
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_requires()
 		{
@@ -1128,7 +1190,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_return
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_return()
 		{
@@ -1146,7 +1209,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_short
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_short()
 		{
@@ -1164,7 +1228,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_signed
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_signed()
 		{
@@ -1182,7 +1247,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_sizeof
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_sizeof()
 		{
@@ -1200,7 +1266,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_static
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_static()
 		{
@@ -1218,7 +1285,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_static_assert
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_static_assert()
 		{
@@ -1236,7 +1304,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_static_cast
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_static_cast()
 		{
@@ -1254,7 +1323,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_struct
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_struct()
 		{
@@ -1272,7 +1342,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_switch
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_switch()
 		{
@@ -1290,7 +1361,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_synchronized
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_synchronized()
 		{
@@ -1308,7 +1380,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_template
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_template()
 		{
@@ -1326,7 +1399,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_this
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_this()
 		{
@@ -1344,7 +1418,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_thread_local
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_thread_local()
 		{
@@ -1362,7 +1437,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_throw
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_throw()
 		{
@@ -1380,7 +1456,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_transaction_safe
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_transaction_safe()
 		{
@@ -1398,7 +1475,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_transaction_safe_dynamic
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_transaction_safe_dynamic()
 		{
@@ -1416,7 +1494,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_true
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_true()
 		{
@@ -1434,7 +1513,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_try
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_try()
 		{
@@ -1452,7 +1532,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_typedef
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_typedef()
 		{
@@ -1470,7 +1551,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_typeid
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_typeid()
 		{
@@ -1488,7 +1570,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_typename
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_typename()
 		{
@@ -1506,7 +1589,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_union
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_union()
 		{
@@ -1524,7 +1608,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_unsigned
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_unsigned()
 		{
@@ -1542,7 +1627,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_using
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_using()
 		{
@@ -1560,7 +1646,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_virtual
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_virtual()
 		{
@@ -1578,7 +1665,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_void
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_void()
 		{
@@ -1596,7 +1684,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_volatile
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_volatile()
 		{
@@ -1614,7 +1703,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_wchar_t
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_wchar_t()
 		{
@@ -1632,7 +1722,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_while
-		: ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_while()
 		{

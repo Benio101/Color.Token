@@ -1,34 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-
-using Microsoft.VisualStudio.Language.StandardClassification;
+﻿using Microsoft.VisualStudio.Language.StandardClassification;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
+using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Color.Token
 {
 	internal class Classifier
-		: IClassifier
+	:
+		IClassifier
 	{
-		private bool IsClassificationRunning;
+		private          bool        IsClassificationRunning;
 		private readonly IClassifier IClassifier;
 
 		#pragma warning disable 67
 		public event EventHandler<ClassificationChangedEventArgs> ClassificationChanged;
 		#pragma warning restore 67
 
-		private readonly Dictionary<string, IClassificationType> Tokens =
-			new Dictionary<string, IClassificationType>();
+		private readonly Dictionary<string, IClassificationType> Tokens = new Dictionary<string, IClassificationType>();
 
-		internal Classifier(
+		internal Classifier
+		(
 			IClassificationTypeRegistryService Registry,
-			IClassifier Classifier
-		){
+			IClassifier                        Classifier
+		)
+		{
 			IsClassificationRunning = false;
 			IClassifier = Classifier;
 
-			foreach (var Token in Meta.List){
+			foreach (var Token in Meta.List)
+			{
 				Tokens.Add(Token, Registry.GetClassificationType("Token." + Token));
 			}
 		}
@@ -42,20 +44,21 @@ namespace Color.Token
 				IsClassificationRunning = true;
 				return Classify(Span);
 			}
-
 			finally
 			{
 				IsClassificationRunning = false;
 			}
 		}
 
-		private IList<ClassificationSpan> Classify(SnapshotSpan Span){
+		private IList<ClassificationSpan> Classify(SnapshotSpan Span)
+		{
 			IList<ClassificationSpan> Spans = new List<ClassificationSpan>();
 
 			if (Span.IsEmpty) return Spans;
 			var Text = Span.GetText();
 
-			foreach (var Token in Meta.List){
+			foreach (var Token in Meta.List)
+			{
 				var TokenName = Token;
 
 				// ReSharper disable once SwitchStatementMissingSomeCases
@@ -80,62 +83,43 @@ namespace Color.Token
 						break;
 				}
 
-				foreach (Match Match in new Regex(
-						"(?<!" + Utils.IdentifierCharacter + ")"
-					+	"(?<Token>" + TokenName            + ")"
-					+	"(?!"  + Utils.IdentifierCharacter + ")"
-				).Matches(Text))
+				foreach
+				(
+					Match Match in new Regex
+					(
+							"(?<!" + Utils.IdentifierCharacter + ")"
+						+	"(?<Token>" + TokenName            + ")"
+						+	"(?!"  + Utils.IdentifierCharacter + ")"
+					)
+					.Matches(Text)
+				)
 				{
-					var MatchedSpan = new SnapshotSpan(
-						Span.Snapshot, new Span(Span.Start + Match.Index, Match.Length)
-					);
+					var MatchedSpan = new SnapshotSpan(Span.Snapshot, new Span(Span.Start + Match.Index, Match.Length));
 
 					var Intersections = IClassifier.GetClassificationSpans(Span);
-					foreach (var Intersection in Intersections){
-						if (!Intersection.Span.OverlapsWith(MatchedSpan)){
-							continue;
-						}
+					foreach (var Intersection in Intersections)
+					{
+						if (!Intersection.Span.OverlapsWith(MatchedSpan)) continue;
 
-						var Classifications = Intersection.ClassificationType.Classification.Split(
-							new[]{" - "}, StringSplitOptions.None
-						);
-
-						if (!Utils.IsClassifiedAs(
-							Classifications, PredefinedClassificationTypeNames.Keyword
-						)){
-							goto NextToken;
-						}
+						var Classifications = Intersection.ClassificationType.Classification.Split(new[]{" - "}, StringSplitOptions.None);
+						if (!Utils.IsClassifiedAs(Classifications, PredefinedClassificationTypeNames.Keyword)) goto NextToken;
 
 						// Token can't be classified as neither
 						// "preprocessor keyword" nor "Attribute".
-						if (Utils.IsClassifiedAs(Classifications, new[]{
-							PredefinedClassificationTypeNames.PreprocessorKeyword,
-							"Attribute",
-						})){
-							goto NextToken;
-						}
+						if (Utils.IsClassifiedAs(Classifications, new[]{PredefinedClassificationTypeNames.PreprocessorKeyword, "Attribute"})) goto NextToken;
 
-						if(
-								Options.ColorMacro
-							&&	Utils.IsClassifiedAs(Classifications, "cppMacro")
-						){
-							// Token can be also classified as "macro".
-							continue;
-						}
+						// Token can be also classified as "macro".
+						if (Options.ColorMacro && Utils.IsClassifiedAs(Classifications, "cppMacro")) continue;
 
 						// Token classification can't begin with "cpp"
 						// (except inactive code classification).
-						if (Utils.IsClassifiedAs(Classifications, new Regex(
-							"^cpp(?!InactiveCodeClassification)"
-
-							,	RegexOptions.IgnoreCase
-						))){
-							goto NextToken;
-						}
+						if (Utils.IsClassifiedAs(Classifications, new Regex("^cpp(?!InactiveCodeClassification)", RegexOptions.IgnoreCase))) goto NextToken;
 					}
 
-					Spans.Add(new ClassificationSpan(new SnapshotSpan(
-						Span.Snapshot, new Span(
+					Spans.Add(new ClassificationSpan(new SnapshotSpan
+					(
+						Span.Snapshot, new Span
+						(
 							Span.Start + Match.Groups["Token"].Index,
 							Match.Groups["Token"].Length
 						)), Tokens[Token]

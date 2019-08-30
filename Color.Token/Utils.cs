@@ -36,7 +36,8 @@ namespace Color.Token
 		(
 			string[] Source,
 			string[] Search
-		){
+		)
+		{
 			return
 			(
 					Source.Length > 0
@@ -66,7 +67,8 @@ namespace Color.Token
 		(
 			string[] Source,
 			string   Search
-		){
+		)
+		{
 			if (Source.Length == 0) return false;
 			if (Search.Length == 0) return false;
 
@@ -78,12 +80,13 @@ namespace Color.Token
 		(
 			string[] Source,
 			Regex    Search
-		){
+		)
+		{
 			return
 			(
 					Source.Length > 0
 				&&	Source.Select(SourceClassification => SourceClassification.ToLower())
-					
+
 					.Any(Search.IsMatch)
 			);
 		}
