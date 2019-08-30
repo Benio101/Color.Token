@@ -1,8 +1,7 @@
-﻿using System.ComponentModel.Composition;
-
-using Microsoft.VisualStudio.Language.StandardClassification;
+﻿using Microsoft.VisualStudio.Language.StandardClassification;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
+using System.ComponentModel.Composition;
 
 namespace Color.Token
 {
@@ -15,7 +14,8 @@ namespace Color.Token
 	internal sealed class Format_Token_alignas
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_alignas(){
+		public Format_Token_alignas()
+		{
 			DisplayName = "C++ Token: \"alignas\"";
 
 			BackgroundCustomizable = false;
@@ -32,7 +32,8 @@ namespace Color.Token
 	internal sealed class Format_Token_alignof
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_alignof(){
+		public Format_Token_alignof()
+		{
 			DisplayName = "C++ Token: \"alignof\"";
 
 			BackgroundCustomizable = false;
@@ -49,7 +50,8 @@ namespace Color.Token
 	internal sealed class Format_Token_asm
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_asm(){
+		public Format_Token_asm()
+		{
 			DisplayName = "C++ Token: \"asm\"";
 
 			BackgroundCustomizable = false;
@@ -66,7 +68,8 @@ namespace Color.Token
 	internal sealed class Format_Token_atomic_cancel
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_atomic_cancel(){
+		public Format_Token_atomic_cancel()
+		{
 			DisplayName = "C++ Token: \"atomic_cancel\"";
 
 			BackgroundCustomizable = false;
@@ -83,7 +86,8 @@ namespace Color.Token
 	internal sealed class Format_Token_atomic_commit
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_atomic_commit(){
+		public Format_Token_atomic_commit()
+		{
 			DisplayName = "C++ Token: \"atomic_commit\"";
 
 			BackgroundCustomizable = false;
@@ -100,7 +104,8 @@ namespace Color.Token
 	internal sealed class Format_Token_atomic_noexcept
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_atomic_noexcept(){
+		public Format_Token_atomic_noexcept()
+		{
 			DisplayName = "C++ Token: \"atomic_noexcept\"";
 
 			BackgroundCustomizable = false;
@@ -117,7 +122,8 @@ namespace Color.Token
 	internal sealed class Format_Token_auto
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_auto(){
+		public Format_Token_auto()
+		{
 			DisplayName = "C++ Token: \"auto\"";
 
 			BackgroundCustomizable = false;
@@ -134,7 +140,8 @@ namespace Color.Token
 	internal sealed class Format_Token_bool
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_bool(){
+		public Format_Token_bool()
+		{
 			DisplayName = "C++ Token: \"bool\"";
 
 			BackgroundCustomizable = false;
@@ -151,7 +158,8 @@ namespace Color.Token
 	internal sealed class Format_Token_break
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_break(){
+		public Format_Token_break()
+		{
 			DisplayName = "C++ Token: \"break\"";
 
 			BackgroundCustomizable = false;
@@ -168,7 +176,8 @@ namespace Color.Token
 	internal sealed class Format_Token_case
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_case(){
+		public Format_Token_case()
+		{
 			DisplayName = "C++ Token: \"case\"";
 
 			BackgroundCustomizable = false;
@@ -185,7 +194,8 @@ namespace Color.Token
 	internal sealed class Format_Token_catch
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_catch(){
+		public Format_Token_catch()
+		{
 			DisplayName = "C++ Token: \"catch\"";
 
 			BackgroundCustomizable = false;
@@ -202,7 +212,8 @@ namespace Color.Token
 	internal sealed class Format_Token_char
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_char(){
+		public Format_Token_char()
+		{
 			DisplayName = "C++ Token: \"char\"";
 
 			BackgroundCustomizable = false;
@@ -219,7 +230,8 @@ namespace Color.Token
 	internal sealed class Format_Token_char8_t
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_char8_t(){
+		public Format_Token_char8_t()
+		{
 			DisplayName = "C++ Token: \"char8_t\"";
 
 			BackgroundCustomizable = false;
@@ -236,7 +248,8 @@ namespace Color.Token
 	internal sealed class Format_Token_char16_t
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_char16_t(){
+		public Format_Token_char16_t()
+		{
 			DisplayName = "C++ Token: \"char16_t\"";
 
 			BackgroundCustomizable = false;
@@ -253,7 +266,8 @@ namespace Color.Token
 	internal sealed class Format_Token_char32_t
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_char32_t(){
+		public Format_Token_char32_t()
+		{
 			DisplayName = "C++ Token: \"char32_t\"";
 
 			BackgroundCustomizable = false;
@@ -270,7 +284,8 @@ namespace Color.Token
 	internal sealed class Format_Token_class
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_class(){
+		public Format_Token_class()
+		{
 			DisplayName = "C++ Token: \"class\"";
 
 			BackgroundCustomizable = false;
@@ -287,7 +302,8 @@ namespace Color.Token
 	internal sealed class Format_Token_concept
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_concept(){
+		public Format_Token_concept()
+		{
 			DisplayName = "C++ Token: \"concept\"";
 
 			BackgroundCustomizable = false;
@@ -304,7 +320,8 @@ namespace Color.Token
 	internal sealed class Format_Token_const
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_const(){
+		public Format_Token_const()
+		{
 			DisplayName = "C++ Token: \"const\"";
 
 			BackgroundCustomizable = false;
@@ -321,7 +338,8 @@ namespace Color.Token
 	internal sealed class Format_Token_consteval
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_consteval(){
+		public Format_Token_consteval()
+		{
 			DisplayName = "C++ Token: \"consteval\"";
 
 			BackgroundCustomizable = false;
@@ -338,7 +356,8 @@ namespace Color.Token
 	internal sealed class Format_Token_constexpr
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_constexpr(){
+		public Format_Token_constexpr()
+		{
 			DisplayName = "C++ Token: \"constexpr\"";
 
 			BackgroundCustomizable = false;
@@ -355,7 +374,8 @@ namespace Color.Token
 	internal sealed class Format_Token_const_cast
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_const_cast(){
+		public Format_Token_const_cast()
+		{
 			DisplayName = "C++ Token: \"const_cast\"";
 
 			BackgroundCustomizable = false;
@@ -372,7 +392,8 @@ namespace Color.Token
 	internal sealed class Format_Token_continue
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_continue(){
+		public Format_Token_continue()
+		{
 			DisplayName = "C++ Token: \"continue\"";
 
 			BackgroundCustomizable = false;
@@ -389,7 +410,8 @@ namespace Color.Token
 	internal sealed class Format_Token_co_await
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_co_await(){
+		public Format_Token_co_await()
+		{
 			DisplayName = "C++ Token: \"co_await\"";
 
 			BackgroundCustomizable = false;
@@ -406,7 +428,8 @@ namespace Color.Token
 	internal sealed class Format_Token_co_return
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_co_return(){
+		public Format_Token_co_return()
+		{
 			DisplayName = "C++ Token: \"co_return\"";
 
 			BackgroundCustomizable = false;
@@ -423,7 +446,8 @@ namespace Color.Token
 	internal sealed class Format_Token_co_yield
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_co_yield(){
+		public Format_Token_co_yield()
+		{
 			DisplayName = "C++ Token: \"co_yield\"";
 
 			BackgroundCustomizable = false;
@@ -440,7 +464,8 @@ namespace Color.Token
 	internal sealed class Format_Token_decltype
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_decltype(){
+		public Format_Token_decltype()
+		{
 			DisplayName = "C++ Token: \"decltype\"";
 
 			BackgroundCustomizable = false;
@@ -457,7 +482,8 @@ namespace Color.Token
 	internal sealed class Format_Token_default
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_default(){
+		public Format_Token_default()
+		{
 			DisplayName = "C++ Token: \"default\" (function definition)";
 
 			BackgroundCustomizable = false;
@@ -474,7 +500,8 @@ namespace Color.Token
 	internal sealed class Format_Token_default_statement
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_default_statement(){
+		public Format_Token_default_statement()
+		{
 			DisplayName = "C++ Token: \"default\" (switch statement)";
 
 			BackgroundCustomizable = false;
@@ -491,7 +518,8 @@ namespace Color.Token
 	internal sealed class Format_Token_delete
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_delete(){
+		public Format_Token_delete()
+		{
 			DisplayName = "C++ Token: \"delete\"";
 
 			BackgroundCustomizable = false;
@@ -508,7 +536,8 @@ namespace Color.Token
 	internal sealed class Format_Token_do
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_do(){
+		public Format_Token_do()
+		{
 			DisplayName = "C++ Token: \"do\"";
 
 			BackgroundCustomizable = false;
@@ -525,7 +554,8 @@ namespace Color.Token
 	internal sealed class Format_Token_double
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_double(){
+		public Format_Token_double()
+		{
 			DisplayName = "C++ Token: \"double\"";
 
 			BackgroundCustomizable = false;
@@ -542,7 +572,8 @@ namespace Color.Token
 	internal sealed class Format_Token_dynamic_cast
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_dynamic_cast(){
+		public Format_Token_dynamic_cast()
+		{
 			DisplayName = "C++ Token: \"dynamic_cast\"";
 
 			BackgroundCustomizable = false;
@@ -559,7 +590,8 @@ namespace Color.Token
 	internal sealed class Format_Token_else
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_else(){
+		public Format_Token_else()
+		{
 			DisplayName = "C++ Token: \"else\"";
 
 			BackgroundCustomizable = false;
@@ -576,7 +608,8 @@ namespace Color.Token
 	internal sealed class Format_Token_enum
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_enum(){
+		public Format_Token_enum()
+		{
 			DisplayName = "C++ Token: \"enum\"";
 
 			BackgroundCustomizable = false;
@@ -593,7 +626,8 @@ namespace Color.Token
 	internal sealed class Format_Token_explicit
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_explicit(){
+		public Format_Token_explicit()
+		{
 			DisplayName = "C++ Token: \"explicit\"";
 
 			BackgroundCustomizable = false;
@@ -610,7 +644,8 @@ namespace Color.Token
 	internal sealed class Format_Token_export
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_export(){
+		public Format_Token_export()
+		{
 			DisplayName = "C++ Token: \"export\"";
 
 			BackgroundCustomizable = false;
@@ -627,7 +662,8 @@ namespace Color.Token
 	internal sealed class Format_Token_extern
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_extern(){
+		public Format_Token_extern()
+		{
 			DisplayName = "C++ Token: \"extern\"";
 
 			BackgroundCustomizable = false;
@@ -644,7 +680,8 @@ namespace Color.Token
 	internal sealed class Format_Token_false
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_false(){
+		public Format_Token_false()
+		{
 			DisplayName = "C++ Token: \"false\"";
 
 			BackgroundCustomizable = false;
@@ -661,7 +698,8 @@ namespace Color.Token
 	internal sealed class Format_Token_final
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_final(){
+		public Format_Token_final()
+		{
 			DisplayName = "C++ Token: \"final\"";
 
 			BackgroundCustomizable = false;
@@ -678,7 +716,8 @@ namespace Color.Token
 	internal sealed class Format_Token_float
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_float(){
+		public Format_Token_float()
+		{
 			DisplayName = "C++ Token: \"float\"";
 
 			BackgroundCustomizable = false;
@@ -695,7 +734,8 @@ namespace Color.Token
 	internal sealed class Format_Token_for
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_for(){
+		public Format_Token_for()
+		{
 			DisplayName = "C++ Token: \"for\"";
 
 			BackgroundCustomizable = false;
@@ -712,7 +752,8 @@ namespace Color.Token
 	internal sealed class Format_Token_friend
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_friend(){
+		public Format_Token_friend()
+		{
 			DisplayName = "C++ Token: \"friend\"";
 
 			BackgroundCustomizable = false;
@@ -729,7 +770,8 @@ namespace Color.Token
 	internal sealed class Format_Token_goto
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_goto(){
+		public Format_Token_goto()
+		{
 			DisplayName = "C++ Token: \"goto\"";
 
 			BackgroundCustomizable = false;
@@ -746,7 +788,8 @@ namespace Color.Token
 	internal sealed class Format_Token_if
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_if(){
+		public Format_Token_if()
+		{
 			DisplayName = "C++ Token: \"if\"";
 
 			BackgroundCustomizable = false;
@@ -763,7 +806,8 @@ namespace Color.Token
 	internal sealed class Format_Token_import
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_import(){
+		public Format_Token_import()
+		{
 			DisplayName = "C++ Token: \"import\"";
 
 			BackgroundCustomizable = false;
@@ -780,7 +824,8 @@ namespace Color.Token
 	internal sealed class Format_Token_inline
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_inline(){
+		public Format_Token_inline()
+		{
 			DisplayName = "C++ Token: \"inline\"";
 
 			BackgroundCustomizable = false;
@@ -797,7 +842,8 @@ namespace Color.Token
 	internal sealed class Format_Token_int
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_int(){
+		public Format_Token_int()
+		{
 			DisplayName = "C++ Token: \"int\"";
 
 			BackgroundCustomizable = false;
@@ -814,7 +860,8 @@ namespace Color.Token
 	internal sealed class Format_Token_long
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_long(){
+		public Format_Token_long()
+		{
 			DisplayName = "C++ Token: \"long\"";
 
 			BackgroundCustomizable = false;
@@ -831,7 +878,8 @@ namespace Color.Token
 	internal sealed class Format_Token_module
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_module(){
+		public Format_Token_module()
+		{
 			DisplayName = "C++ Token: \"module\"";
 
 			BackgroundCustomizable = false;
@@ -848,7 +896,8 @@ namespace Color.Token
 	internal sealed class Format_Token_mutable
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_mutable(){
+		public Format_Token_mutable()
+		{
 			DisplayName = "C++ Token: \"mutable\"";
 
 			BackgroundCustomizable = false;
@@ -865,7 +914,8 @@ namespace Color.Token
 	internal sealed class Format_Token_namespace
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_namespace(){
+		public Format_Token_namespace()
+		{
 			DisplayName = "C++ Token: \"namespace\"";
 
 			BackgroundCustomizable = false;
@@ -882,7 +932,8 @@ namespace Color.Token
 	internal sealed class Format_Token_new
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_new(){
+		public Format_Token_new()
+		{
 			DisplayName = "C++ Token: \"new\"";
 
 			BackgroundCustomizable = false;
@@ -899,7 +950,8 @@ namespace Color.Token
 	internal sealed class Format_Token_noexcept
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_noexcept(){
+		public Format_Token_noexcept()
+		{
 			DisplayName = "C++ Token: \"noexcept\"";
 
 			BackgroundCustomizable = false;
@@ -916,7 +968,8 @@ namespace Color.Token
 	internal sealed class Format_Token_nullptr
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_nullptr(){
+		public Format_Token_nullptr()
+		{
 			DisplayName = "C++ Token: \"nullptr\"";
 
 			BackgroundCustomizable = false;
@@ -933,7 +986,8 @@ namespace Color.Token
 	internal sealed class Format_Token_operator
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_operator(){
+		public Format_Token_operator()
+		{
 			DisplayName = "C++ Token: \"operator\"";
 
 			BackgroundCustomizable = false;
@@ -950,7 +1004,8 @@ namespace Color.Token
 	internal sealed class Format_Token_override
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_override(){
+		public Format_Token_override()
+		{
 			DisplayName = "C++ Token: \"override\"";
 
 			BackgroundCustomizable = false;
@@ -967,7 +1022,8 @@ namespace Color.Token
 	internal sealed class Format_Token_private
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_private(){
+		public Format_Token_private()
+		{
 			DisplayName = "C++ Token: \"private\"";
 
 			BackgroundCustomizable = false;
@@ -984,7 +1040,8 @@ namespace Color.Token
 	internal sealed class Format_Token_protected
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_protected(){
+		public Format_Token_protected()
+		{
 			DisplayName = "C++ Token: \"protected\"";
 
 			BackgroundCustomizable = false;
@@ -1001,7 +1058,8 @@ namespace Color.Token
 	internal sealed class Format_Token_public
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_public(){
+		public Format_Token_public()
+		{
 			DisplayName = "C++ Token: \"public\"";
 
 			BackgroundCustomizable = false;
@@ -1018,7 +1076,8 @@ namespace Color.Token
 	internal sealed class Format_Token_reflexpr
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_reflexpr(){
+		public Format_Token_reflexpr()
+		{
 			DisplayName = "C++ Token: \"reflexpr\"";
 
 			BackgroundCustomizable = false;
@@ -1035,7 +1094,8 @@ namespace Color.Token
 	internal sealed class Format_Token_reinterpret_cast
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_reinterpret_cast(){
+		public Format_Token_reinterpret_cast()
+		{
 			DisplayName = "C++ Token: \"reinterpret_cast\"";
 
 			BackgroundCustomizable = false;
@@ -1052,7 +1112,8 @@ namespace Color.Token
 	internal sealed class Format_Token_requires
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_requires(){
+		public Format_Token_requires()
+		{
 			DisplayName = "C++ Token: \"requires\"";
 
 			BackgroundCustomizable = false;
@@ -1069,7 +1130,8 @@ namespace Color.Token
 	internal sealed class Format_Token_return
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_return(){
+		public Format_Token_return()
+		{
 			DisplayName = "C++ Token: \"return\"";
 
 			BackgroundCustomizable = false;
@@ -1086,7 +1148,8 @@ namespace Color.Token
 	internal sealed class Format_Token_short
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_short(){
+		public Format_Token_short()
+		{
 			DisplayName = "C++ Token: \"short\"";
 
 			BackgroundCustomizable = false;
@@ -1103,7 +1166,8 @@ namespace Color.Token
 	internal sealed class Format_Token_signed
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_signed(){
+		public Format_Token_signed()
+		{
 			DisplayName = "C++ Token: \"signed\"";
 
 			BackgroundCustomizable = false;
@@ -1120,7 +1184,8 @@ namespace Color.Token
 	internal sealed class Format_Token_sizeof
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_sizeof(){
+		public Format_Token_sizeof()
+		{
 			DisplayName = "C++ Token: \"sizeof\"";
 
 			BackgroundCustomizable = false;
@@ -1137,7 +1202,8 @@ namespace Color.Token
 	internal sealed class Format_Token_static
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_static(){
+		public Format_Token_static()
+		{
 			DisplayName = "C++ Token: \"static\"";
 
 			BackgroundCustomizable = false;
@@ -1154,7 +1220,8 @@ namespace Color.Token
 	internal sealed class Format_Token_static_assert
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_static_assert(){
+		public Format_Token_static_assert()
+		{
 			DisplayName = "C++ Token: \"static_assert\"";
 
 			BackgroundCustomizable = false;
@@ -1171,7 +1238,8 @@ namespace Color.Token
 	internal sealed class Format_Token_static_cast
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_static_cast(){
+		public Format_Token_static_cast()
+		{
 			DisplayName = "C++ Token: \"static_cast\"";
 
 			BackgroundCustomizable = false;
@@ -1188,7 +1256,8 @@ namespace Color.Token
 	internal sealed class Format_Token_struct
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_struct(){
+		public Format_Token_struct()
+		{
 			DisplayName = "C++ Token: \"struct\"";
 
 			BackgroundCustomizable = false;
@@ -1205,7 +1274,8 @@ namespace Color.Token
 	internal sealed class Format_Token_switch
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_switch(){
+		public Format_Token_switch()
+		{
 			DisplayName = "C++ Token: \"switch\"";
 
 			BackgroundCustomizable = false;
@@ -1222,7 +1292,8 @@ namespace Color.Token
 	internal sealed class Format_Token_synchronized
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_synchronized(){
+		public Format_Token_synchronized()
+		{
 			DisplayName = "C++ Token: \"synchronized\"";
 
 			BackgroundCustomizable = false;
@@ -1239,7 +1310,8 @@ namespace Color.Token
 	internal sealed class Format_Token_template
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_template(){
+		public Format_Token_template()
+		{
 			DisplayName = "C++ Token: \"template\"";
 
 			BackgroundCustomizable = false;
@@ -1256,7 +1328,8 @@ namespace Color.Token
 	internal sealed class Format_Token_this
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_this(){
+		public Format_Token_this()
+		{
 			DisplayName = "C++ Token: \"this\"";
 
 			BackgroundCustomizable = false;
@@ -1273,7 +1346,8 @@ namespace Color.Token
 	internal sealed class Format_Token_thread_local
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_thread_local(){
+		public Format_Token_thread_local()
+		{
 			DisplayName = "C++ Token: \"thread_local\"";
 
 			BackgroundCustomizable = false;
@@ -1290,7 +1364,8 @@ namespace Color.Token
 	internal sealed class Format_Token_throw
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_throw(){
+		public Format_Token_throw()
+		{
 			DisplayName = "C++ Token: \"throw\"";
 
 			BackgroundCustomizable = false;
@@ -1307,7 +1382,8 @@ namespace Color.Token
 	internal sealed class Format_Token_transaction_safe
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_transaction_safe(){
+		public Format_Token_transaction_safe()
+		{
 			DisplayName = "C++ Token: \"transaction_safe\"";
 
 			BackgroundCustomizable = false;
@@ -1324,7 +1400,8 @@ namespace Color.Token
 	internal sealed class Format_Token_transaction_safe_dynamic
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_transaction_safe_dynamic(){
+		public Format_Token_transaction_safe_dynamic()
+		{
 			DisplayName = "C++ Token: \"transaction_safe_dynamic\"";
 
 			BackgroundCustomizable = false;
@@ -1341,7 +1418,8 @@ namespace Color.Token
 	internal sealed class Format_Token_true
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_true(){
+		public Format_Token_true()
+		{
 			DisplayName = "C++ Token: \"true\"";
 
 			BackgroundCustomizable = false;
@@ -1358,7 +1436,8 @@ namespace Color.Token
 	internal sealed class Format_Token_try
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_try(){
+		public Format_Token_try()
+		{
 			DisplayName = "C++ Token: \"try\"";
 
 			BackgroundCustomizable = false;
@@ -1375,7 +1454,8 @@ namespace Color.Token
 	internal sealed class Format_Token_typedef
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_typedef(){
+		public Format_Token_typedef()
+		{
 			DisplayName = "C++ Token: \"typedef\"";
 
 			BackgroundCustomizable = false;
@@ -1392,7 +1472,8 @@ namespace Color.Token
 	internal sealed class Format_Token_typeid
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_typeid(){
+		public Format_Token_typeid()
+		{
 			DisplayName = "C++ Token: \"typeid\"";
 
 			BackgroundCustomizable = false;
@@ -1409,7 +1490,8 @@ namespace Color.Token
 	internal sealed class Format_Token_typename
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_typename(){
+		public Format_Token_typename()
+		{
 			DisplayName = "C++ Token: \"typename\"";
 
 			BackgroundCustomizable = false;
@@ -1426,7 +1508,8 @@ namespace Color.Token
 	internal sealed class Format_Token_union
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_union(){
+		public Format_Token_union()
+		{
 			DisplayName = "C++ Token: \"union\"";
 
 			BackgroundCustomizable = false;
@@ -1443,7 +1526,8 @@ namespace Color.Token
 	internal sealed class Format_Token_unsigned
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_unsigned(){
+		public Format_Token_unsigned()
+		{
 			DisplayName = "C++ Token: \"unsigned\"";
 
 			BackgroundCustomizable = false;
@@ -1460,7 +1544,8 @@ namespace Color.Token
 	internal sealed class Format_Token_using
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_using(){
+		public Format_Token_using()
+		{
 			DisplayName = "C++ Token: \"using\"";
 
 			BackgroundCustomizable = false;
@@ -1477,7 +1562,8 @@ namespace Color.Token
 	internal sealed class Format_Token_virtual
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_virtual(){
+		public Format_Token_virtual()
+		{
 			DisplayName = "C++ Token: \"virtual\"";
 
 			BackgroundCustomizable = false;
@@ -1494,7 +1580,8 @@ namespace Color.Token
 	internal sealed class Format_Token_void
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_void(){
+		public Format_Token_void()
+		{
 			DisplayName = "C++ Token: \"void\"";
 
 			BackgroundCustomizable = false;
@@ -1511,7 +1598,8 @@ namespace Color.Token
 	internal sealed class Format_Token_volatile
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_volatile(){
+		public Format_Token_volatile()
+		{
 			DisplayName = "C++ Token: \"volatile\"";
 
 			BackgroundCustomizable = false;
@@ -1528,7 +1616,8 @@ namespace Color.Token
 	internal sealed class Format_Token_wchar_t
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_wchar_t(){
+		public Format_Token_wchar_t()
+		{
 			DisplayName = "C++ Token: \"wchar_t\"";
 
 			BackgroundCustomizable = false;
@@ -1545,7 +1634,8 @@ namespace Color.Token
 	internal sealed class Format_Token_while
 		: ClassificationFormatDefinition
 	{
-		public Format_Token_while(){
+		public Format_Token_while()
+		{
 			DisplayName = "C++ Token: \"while\"";
 
 			BackgroundCustomizable = false;

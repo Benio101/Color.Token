@@ -1,16 +1,16 @@
-﻿using System.ComponentModel.Composition;
-
-using Microsoft.VisualStudio.Text.Classification;
+﻿using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Utilities;
+using System.ComponentModel.Composition;
 
 namespace Color.Token
 {
 	internal static class Definitions
 	{
-		// > The field is never used
-		// Reason The field is used by MEF.
 		#pragma warning disable 169
 		#pragma warning disable IDE0051
+
+		// > The field is never used
+		// Reason: The field is used by MEF.
 
 		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Token.alignas")]
