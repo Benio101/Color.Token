@@ -20,7 +20,7 @@ namespace Color.Token
 		// ReSharper disable AutoPropertyCanBeMadeGetOnly.Global
 		// Reason: Setter is automated by externals. Removing it shall made option readonly.
 
-		public bool ColorMacro { set; get; } = false;
+		public bool ColorMacro {  get; set; } = false;
 
 		// ReSharper restore AutoPropertyCanBeMadeGetOnly.Global
 	}
