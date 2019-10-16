@@ -3,9 +3,9 @@
 
 ## Status
 | Branch | Build Status
-| ---   | ---
-| `master` | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/master?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/master)
-| `2017` | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/2017?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/2017)
+| ---    | ---
+| [`master`](https://github.com/Benio101/Color.Token/tree/master) | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/master?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/master)
+| [`2017`](https://github.com/Benio101/Color.Token/tree/2017) | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/2017?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/2017)
 
 ## Description
 Extension adds options to overwrite colors of certain C++ Tokens.<br>
