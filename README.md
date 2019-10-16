@@ -146,5 +146,6 @@ Full list of customizable Tokens, with their default colors:
 ## Older versions
 ### 2017
 - Branch: [`2017`](https://github.com/Benio101/Color.Token/tree/2017)
-- Release: [`1.3.1+2017`](https://github.com/Benio101/Color.Token/releases/tag/1.3.1%2B2017)
-- Download: [`Color.Token.vsix`](https://github.com/Benio101/Color.Token/releases/download/1.3.1%2B2017/Color.Token.vsix)
+- Release: [`1.3.1.1+2017`](https://github.com/Benio101/Color.Token/releases/tag/1.3.1.1%2B2017)
+- Download: [`Color.Token.vsix`](https://github.com/Benio101/Color.Token/releases/download/1.3.1.1%2B2017/Color.Token.vsix)
+- Marketplace: [`Color.Token (2017)`](https://marketplace.visualstudio.com/items?itemName=Benio.ColorToken)
