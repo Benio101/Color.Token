@@ -142,3 +142,8 @@ Full list of customizable Tokens, with their default colors:
 ## Notes
 - `asm` can be preceded or followed by up to two underscore characters (U+005F, `_`), _eg_ `__asm`.
 - `default` (`switch` statement) means `default` keyword is followed by `:` (possibly after whitespaces).
+
+## Newer versions
+### 2019
+- Branch: [`master`](https://github.com/Benio101/Color.Token/tree/master)
+- Marketplace: [`Color.Token`](https://marketplace.visualstudio.com/items?itemName=Benio.ColorToken2019)
