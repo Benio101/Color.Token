@@ -24,7 +24,7 @@ namespace Color.Token
 		Guid("0000436F-6C6F-722E-546F-6B656E2E6374"),
 
 		ProvideMenuResource("Menus.ctmenu", 1),
-		ProvideOptionPage(typeof(OptionsPage), "Color.Token", "Options", 0, 0, true)
+		ProvideOptionPage(typeof(OptionsPage_Tokens), "Color.Token", "Tokens", 0, 0, true)
 	]
 
 	public sealed class Package
