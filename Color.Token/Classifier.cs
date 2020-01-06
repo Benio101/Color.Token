@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.Text.Classification;
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using System.Windows;
 
 namespace Color.Token
 {
@@ -18,7 +19,7 @@ namespace Color.Token
 		public event EventHandler<ClassificationChangedEventArgs> ClassificationChanged;
 		#pragma warning restore 67
 
-		private readonly Dictionary<string, IClassificationType> Tokens = new Dictionary<string, IClassificationType>();
+		private readonly Dictionary<int, IClassificationType> Tokens = new Dictionary<int, IClassificationType>();
 
 		internal Classifier
 		(
@@ -29,9 +30,9 @@ namespace Color.Token
 			IsClassificationRunning = false;
 			IClassifier = Classifier;
 
-			foreach (var Token in Meta.List)
+			for (int i = 1; i <= 32; ++i)
 			{
-				Tokens.Add(Token, Registry.GetClassificationType("Token." + Token));
+				Tokens.Add(i, Registry.GetClassificationType("Token" + i.ToString()));
 			}
 		}
 
@@ -57,32 +58,19 @@ namespace Color.Token
 			if (Span.IsEmpty) return Spans;
 			var Text = Span.GetText();
 
-			foreach (var Token in Meta.List)
+			if (!Options.Tokens.Contains("\n")) return Spans;
+			string[] Entries = Options.Tokens.Split('\n');
+			foreach (string Entry in Entries)
 			{
-				var TokenName = Token;
+				if (!Entry.Contains("\t")) continue;
+				string[] Fields = Entry.Split('\t');
+				if (Fields.Length == 0) continue;
 
-				// ReSharper disable once SwitchStatementMissingSomeCases
-				switch (Token)
-				{
-					// Alternative form: asm
-					case "asm":
+				string Name       = Fields[0];
+				   int ID         = System.Convert.ToInt32(Fields[1]);
+				  bool ColorMacro = Fields[2] == "1";
 
-						TokenName = "_{0,2}" + Token + "_{0,2}";
-						break;
-
-					// default (function definition)
-					case "default":
-
-						TokenName = @"default(?![ \t\v\n\f]*:)";
-						break;
-
-					// default (switch statement)
-					case "default.statement":
-
-						TokenName = @"default(?=[ \t\v\n\f]*:)";
-						break;
-				}
-
+				var TokenName = Name;
 				foreach
 				(
 					Match Match in new Regex
@@ -109,7 +97,7 @@ namespace Color.Token
 						if (Utils.IsClassifiedAs(Classifications, new[]{PredefinedClassificationTypeNames.PreprocessorKeyword, "Attribute"})) goto NextToken;
 
 						// Token can be also classified as "macro".
-						if (Options.ColorMacro && Utils.IsClassifiedAs(Classifications, "cppMacro")) continue;
+						if (!ColorMacro && Utils.IsClassifiedAs(Classifications, "cppMacro")) continue;
 
 						// Token classification can't begin with "cpp"
 						// (except inactive code classification).
@@ -122,7 +110,7 @@ namespace Color.Token
 						(
 							Span.Start + Match.Groups["Token"].Index,
 							Match.Groups["Token"].Length
-						)), Tokens[Token]
+						)), Tokens[ID]
 					));
 
 					NextToken:;
