@@ -4,7 +4,8 @@
 ## Status
 | Branch | Build Status
 | ---    | ---
-| [`master`](https://github.com/Benio101/Color.Token/tree/master) | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/master?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/master)
+| [`2022`](https://github.com/Benio101/Color.Token/tree/2022) | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/2022?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/2022)
+| [`2019`](https://github.com/Benio101/Color.Token/tree/2019) | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/2019?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/2019)
 | [`2017`](https://github.com/Benio101/Color.Token/tree/2017) | [![Build status](https://ci.appveyor.com/api/projects/status/fduwr8hv17jn39lo/branch/2017?svg=true)](https://ci.appveyor.com/project/Benio101/color-token/branch/2017)
 
 ## Description
@@ -149,3 +150,8 @@ Full list of customizable Tokens, with their default colors:
 - Release: [`1.3.1.1+2017`](https://github.com/Benio101/Color.Token/releases/tag/1.3.1.1%2B2017)
 - Download: [`Color.Token.vsix`](https://github.com/Benio101/Color.Token/releases/download/1.3.1.1%2B2017/Color.Token.vsix)
 - Marketplace: [`Color.Token (2017)`](https://marketplace.visualstudio.com/items?itemName=Benio.ColorToken)
+
+## Newer versions
+### 2022
+- Branch: [`2022`](https://github.com/Benio101/Color.Token/tree/2022)
+- Marketplace: [`Color.Token`](https://marketplace.visualstudio.com/items?itemName=Benio.ColorToken2022)
