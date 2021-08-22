@@ -6,21 +6,26 @@
 	{
 		internal static class Colors
 		{
-			private  static readonly Color Blue      = Color.FromRgb(128, 176, 224);
-			private  static readonly Color BlueDark  = Color.FromRgb( 96, 128, 224);
-			private  static readonly Color Green     = Color.FromRgb(176, 224, 128);
-			private  static readonly Color GreenDark = Color.FromRgb(128, 176,  96);
-			private  static readonly Color Purple    = Color.FromRgb(176, 128, 224);
-			private  static readonly Color Red       = Color.FromRgb(224, 128, 128);
-			private  static readonly Color RedDark   = Color.FromRgb(224,  96,  96);
+			private  static readonly Color Red        = Color.FromRgb(224, 128, 128);
+			private  static readonly Color Lime       = Color.FromRgb(176, 224, 128);
+			private  static readonly Color Blue       = Color.FromRgb(128, 176, 224);
+			private  static readonly Color Violet     = Color.FromRgb(128, 128, 224);
+			private  static readonly Color Purple     = Color.FromRgb(200, 176, 224);
 
-			internal static readonly Color Access    = GreenDark;
-			internal static readonly Color Assembler = Purple;
-			internal static readonly Color Flow      = BlueDark;
-			internal static readonly Color Important = RedDark;
-			internal static readonly Color Keyword   = Blue;
-			internal static readonly Color Static    = Red;
-			internal static readonly Color Type      = Green;
+			private  static readonly Color GreenDark  = Color.FromRgb( 80, 176,  80);
+			private  static readonly Color YellowDark = Color.FromRgb(176, 176,  80);
+			private  static readonly Color RedDark    = Color.FromRgb(176,  80,  80);
+
+			internal static readonly Color Public     = GreenDark;
+			internal static readonly Color Protected  = YellowDark;
+			internal static readonly Color Private    = RedDark;
+
+			internal static readonly Color Assembler  = Purple;
+			internal static readonly Color Flow       = Violet;
+			internal static readonly Color Important  = Red;
+			internal static readonly Color Keyword    = Blue;
+			internal static readonly Color Static     = Red;
+			internal static readonly Color Type       = Lime;
 		}
 	}
 }

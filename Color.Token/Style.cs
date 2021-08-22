@@ -1084,7 +1084,7 @@ namespace Color.Token
 			DisplayName = "C++ Token: \"private\"";
 
 			BackgroundCustomizable = false;
-			ForegroundColor = Default.Colors.Access;
+			ForegroundColor = Default.Colors.Private;
 		}
 	}
 
@@ -1103,7 +1103,7 @@ namespace Color.Token
 			DisplayName = "C++ Token: \"protected\"";
 
 			BackgroundCustomizable = false;
-			ForegroundColor = Default.Colors.Access;
+			ForegroundColor = Default.Colors.Protected;
 		}
 	}
 
@@ -1122,7 +1122,7 @@ namespace Color.Token
 			DisplayName = "C++ Token: \"public\"";
 
 			BackgroundCustomizable = false;
-			ForegroundColor = Default.Colors.Access;
+			ForegroundColor = Default.Colors.Public;
 		}
 	}
 
