@@ -24,6 +24,7 @@
 			"const",
 			"consteval",
 			"constexpr",
+			"constinit",
 			"const_cast",
 			"continue",
 			"co_await",

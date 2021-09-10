@@ -386,6 +386,25 @@ namespace Color.Token
 	}
 
 	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Token.constinit")]
+	[Name("Token.constinit")]
+	[BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
+	[UserVisible(true)]
+	[Order(After = Priority.High)]
+	internal sealed class Format_Token_constinit
+	:
+		ClassificationFormatDefinition
+	{
+		public Format_Token_constinit()
+		{
+			DisplayName = "C++ Token: \"constinit\"";
+
+			BackgroundCustomizable = false;
+			ForegroundColor = Default.Colors.Keyword;
+		}
+	}
+
+	[Export(typeof(EditorFormatDefinition))]
 	[ClassificationType(ClassificationTypeNames = "Token.const_cast")]
 	[Name("Token.const_cast")]
 	[BaseDefinition(PredefinedClassificationTypeNames.Keyword)]

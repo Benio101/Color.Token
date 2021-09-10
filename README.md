@@ -68,6 +68,7 @@ Full list of customizable Tokens, with their default colors:
 | `const`                            | Keyword   | Blue        | 128, 176, 224 |
 | `consteval`                        | Keyword   | Blue        | 128, 176, 224 |
 | `constexpr`                        | Keyword   | Blue        | 128, 176, 224 |
+| `constinit`                        | Keyword   | Blue        | 128, 176, 224 |
 | `const_cast`                       | Keyword   | Blue        | 128, 176, 224 |
 | `continue`                         | Flow      | Violet      | 128, 128, 224 |
 | `co_await`                         | Flow      | Violet      | 128, 128, 224 |

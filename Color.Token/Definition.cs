@@ -113,6 +113,11 @@ namespace Color.Token
 		Definition_Token_constexpr;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.constinit")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_constinit;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Token.const_cast")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Token_const_cast;
