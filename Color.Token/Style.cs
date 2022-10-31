@@ -1759,8 +1759,8 @@ namespace Color.Token
     [Export(typeof(EditorFormatDefinition))]
     [ClassificationType(ClassificationTypeNames = "Token.FRotator")]
     [Name("Token.FRotator")]
-    [BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
-    [UserVisible(true)]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FRotator
 	:
@@ -1779,8 +1779,8 @@ namespace Color.Token
     [Export(typeof(EditorFormatDefinition))]
     [ClassificationType(ClassificationTypeNames = "Token.FString")]
     [Name("Token.FString")]
-    [BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
-    [UserVisible(true)]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FString
 	:
@@ -1799,8 +1799,8 @@ namespace Color.Token
     [Export(typeof(EditorFormatDefinition))]
     [ClassificationType(ClassificationTypeNames = "Token.FText")]
     [Name("Token.FText")]
-    [BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
-    [UserVisible(true)]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FText
 	:
@@ -1819,8 +1819,8 @@ namespace Color.Token
     [Export(typeof(EditorFormatDefinition))]
     [ClassificationType(ClassificationTypeNames = "Token.FTransform")]
     [Name("Token.FTransform")]
-    [BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
-    [UserVisible(true)]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FTransform
 	:
@@ -1839,8 +1839,8 @@ namespace Color.Token
     [Export(typeof(EditorFormatDefinition))]
     [ClassificationType(ClassificationTypeNames = "Token.FVector")]
     [Name("Token.FVector")]
-    [BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
-    [UserVisible(true)]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FVector
 	:
@@ -1859,8 +1859,8 @@ namespace Color.Token
     [Export(typeof(EditorFormatDefinition))]
     [ClassificationType(ClassificationTypeNames = "Token.FVector2D")]
     [Name("Token.FVector2D")]
-    [BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
-    [UserVisible(true)]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FVector2D
 	:
@@ -1879,8 +1879,8 @@ namespace Color.Token
     [Export(typeof(EditorFormatDefinition))]
     [ClassificationType(ClassificationTypeNames = "Token.int32")]
     [Name("Token.int32")]
-    [BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
-    [UserVisible(true)]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_int32
 	:
@@ -1899,7 +1899,7 @@ namespace Color.Token
 	[Export(typeof(EditorFormatDefinition))]
 	[ClassificationType(ClassificationTypeNames = "Token.int8")]
 	[Name("Token.int8")]
-	[BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
+	[BaseDefinition("cppMacro")]
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_int8
