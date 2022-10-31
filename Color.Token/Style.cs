@@ -1763,8 +1763,8 @@ namespace Color.Token
     [UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FRotator
-:
-    ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
     {
         public Format_Token_FRotator()
         {
@@ -1783,8 +1783,8 @@ namespace Color.Token
     [UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FString
-:
-    ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
     {
         public Format_Token_FString()
         {
@@ -1803,8 +1803,8 @@ namespace Color.Token
     [UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FText
-:
-    ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
     {
         public Format_Token_FText()
         {
@@ -1823,8 +1823,8 @@ namespace Color.Token
     [UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FTransform
-:
-    ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
     {
         public Format_Token_FTransform()
         {
@@ -1843,8 +1843,8 @@ namespace Color.Token
     [UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FVector
-:
-    ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
     {
         public Format_Token_FVector()
         {
@@ -1863,8 +1863,8 @@ namespace Color.Token
     [UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_FVector2D
-:
-    ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
     {
         public Format_Token_FVector2D()
         {
@@ -1883,8 +1883,8 @@ namespace Color.Token
     [UserVisible(true)]
     [Order(After = Priority.High)]
     internal sealed class Format_Token_int32
-:
-    ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
     {
         public Format_Token_int32()
         {
@@ -1903,8 +1903,8 @@ namespace Color.Token
 	[UserVisible(true)]
 	[Order(After = Priority.High)]
 	internal sealed class Format_Token_int8
-:
-	ClassificationFormatDefinition
+	:
+		ClassificationFormatDefinition
 	{
 		public Format_Token_int8()
 		{
