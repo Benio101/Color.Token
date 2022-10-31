@@ -1771,7 +1771,7 @@ namespace Color.Token
             DisplayName = "Unreal C++ Token: \"FRotator\"";
 
             BackgroundCustomizable = true;
-            ForegroundColor = Default.Colors.FRotator;
+            ForegroundColor = Default.Colors.Type;
         }
     }
 
@@ -1791,7 +1791,7 @@ namespace Color.Token
             DisplayName = "Unreal C++ Token: \"FString\"";
 
             BackgroundCustomizable = true;
-            ForegroundColor = Default.Colors.FString;
+            ForegroundColor = Default.Colors.Type;
         }
     }
 
@@ -1811,7 +1811,7 @@ namespace Color.Token
             DisplayName = "Unreal C++ Token: \"FText\"";
 
             BackgroundCustomizable = true;
-            ForegroundColor = Default.Colors.FText;
+            ForegroundColor = Default.Colors.Type;
         }
     }
 
@@ -1831,7 +1831,7 @@ namespace Color.Token
             DisplayName = "Unreal C++ Token: \"FTransform\"";
 
             BackgroundCustomizable = true;
-            ForegroundColor = Default.Colors.FTransform;
+            ForegroundColor = Default.Colors.Type;
         }
     }
     
@@ -1851,7 +1851,7 @@ namespace Color.Token
             DisplayName = "Unreal C++ Token: \"FVector\"";
             
             BackgroundCustomizable = true;
-            ForegroundColor = Default.Colors.FVector;
+            ForegroundColor = Default.Colors.Type;
         }
     }
 	 
@@ -1871,7 +1871,7 @@ namespace Color.Token
             DisplayName = "Unreal C++ Token: \"FVector2D\"";
 
             BackgroundCustomizable = true;
-            ForegroundColor = Default.Colors.FVector2D;
+            ForegroundColor = Default.Colors.Type;
         }
     }
 
@@ -1891,7 +1891,7 @@ namespace Color.Token
             DisplayName = "Unreal C++ Token: \"int32\"";
             
             BackgroundCustomizable = true;
-            ForegroundColor = Default.Colors.int32;
+            ForegroundColor = Default.Colors.Type;
         }
 	}
 
@@ -1911,7 +1911,7 @@ namespace Color.Token
 			DisplayName = "Unreal C++ Token: \"int8\"";
 
 			BackgroundCustomizable = true;
-			ForegroundColor = Default.Colors.int8;
+			ForegroundColor = Default.Colors.Type;
 		}
 	}
 }
