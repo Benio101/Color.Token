@@ -1752,4 +1752,166 @@ namespace Color.Token
 			ForegroundColor = Default.Colors.Flow;
 		}
 	}
+
+    //###### Unreal Tokens
+
+    // FRotator
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "Token.FRotator")]
+    [Name("Token.FRotator")]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
+    [Order(After = Priority.High)]
+    internal sealed class Format_Token_FRotator
+	:
+		ClassificationFormatDefinition
+    {
+        public Format_Token_FRotator()
+        {
+            DisplayName = "Unreal C++ Token: \"FRotator\"";
+
+            BackgroundCustomizable = true;
+            ForegroundColor = Default.Colors.Type;
+        }
+    }
+
+	// FString
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "Token.FString")]
+    [Name("Token.FString")]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
+    [Order(After = Priority.High)]
+    internal sealed class Format_Token_FString
+	:
+		ClassificationFormatDefinition
+    {
+        public Format_Token_FString()
+        {
+            DisplayName = "Unreal C++ Token: \"FString\"";
+
+            BackgroundCustomizable = true;
+            ForegroundColor = Default.Colors.Type;
+        }
+    }
+
+    // FText
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "Token.FText")]
+    [Name("Token.FText")]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
+    [Order(After = Priority.High)]
+    internal sealed class Format_Token_FText
+	:
+		ClassificationFormatDefinition
+    {
+        public Format_Token_FText()
+        {
+            DisplayName = "Unreal C++ Token: \"FText\"";
+
+            BackgroundCustomizable = true;
+            ForegroundColor = Default.Colors.Type;
+        }
+    }
+
+    // FTransform
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "Token.FTransform")]
+    [Name("Token.FTransform")]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
+    [Order(After = Priority.High)]
+    internal sealed class Format_Token_FTransform
+	:
+		ClassificationFormatDefinition
+    {
+        public Format_Token_FTransform()
+        {
+            DisplayName = "Unreal C++ Token: \"FTransform\"";
+
+            BackgroundCustomizable = true;
+            ForegroundColor = Default.Colors.Type;
+        }
+    }
+    
+    // FVector
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "Token.FVector")]
+    [Name("Token.FVector")]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
+    [Order(After = Priority.High)]
+    internal sealed class Format_Token_FVector
+	:
+		ClassificationFormatDefinition
+    {
+        public Format_Token_FVector()
+        {
+            DisplayName = "Unreal C++ Token: \"FVector\"";
+            
+            BackgroundCustomizable = true;
+            ForegroundColor = Default.Colors.Type;
+        }
+    }
+	 
+    // FVector2D
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "Token.FVector2D")]
+    [Name("Token.FVector2D")]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
+    [Order(After = Priority.High)]
+    internal sealed class Format_Token_FVector2D
+	:
+		ClassificationFormatDefinition
+    {
+        public Format_Token_FVector2D()
+        {
+            DisplayName = "Unreal C++ Token: \"FVector2D\"";
+
+            BackgroundCustomizable = true;
+            ForegroundColor = Default.Colors.Type;
+        }
+    }
+
+	// int32
+    [Export(typeof(EditorFormatDefinition))]
+    [ClassificationType(ClassificationTypeNames = "Token.int32")]
+    [Name("Token.int32")]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
+    [Order(After = Priority.High)]
+    internal sealed class Format_Token_int32
+	:
+		ClassificationFormatDefinition
+    {
+        public Format_Token_int32()
+        {
+            DisplayName = "Unreal C++ Token: \"int32\"";
+            
+            BackgroundCustomizable = true;
+            ForegroundColor = Default.Colors.Type;
+        }
+	}
+
+	// int8
+	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Token.int8")]
+	[Name("Token.int8")]
+	[BaseDefinition("cppMacro")]
+	[UserVisible(true)]
+	[Order(After = Priority.High)]
+	internal sealed class Format_Token_int8
+	:
+		ClassificationFormatDefinition
+	{
+		public Format_Token_int8()
+		{
+			DisplayName = "Unreal C++ Token: \"int8\"";
+
+			BackgroundCustomizable = true;
+			ForegroundColor = Default.Colors.Type;
+		}
+	}
 }

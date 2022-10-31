@@ -102,14 +102,17 @@ namespace Color.Token
 						if (!Intersection.Span.OverlapsWith(MatchedSpan)) continue;
 
 						var Classifications = Intersection.ClassificationType.Classification.Split(new[]{" - "}, StringSplitOptions.None);
+
+						// Token classified as "macro" is optionally valid.
+						if (Options.ColorMacro && Utils.IsClassifiedAs(Classifications, "cppMacro"))
+							continue;
+
+						// Token must be classified as "keyword".
 						if (!Utils.IsClassifiedAs(Classifications, PredefinedClassificationTypeNames.Keyword)) goto NextToken;
 
 						// Token can't be classified as neither
 						// "preprocessor keyword" nor "Attribute".
 						if (Utils.IsClassifiedAs(Classifications, new[]{PredefinedClassificationTypeNames.PreprocessorKeyword, "Attribute"})) goto NextToken;
-
-						// Token can be also classified as "macro".
-						if (Options.ColorMacro && Utils.IsClassifiedAs(Classifications, "cppMacro")) continue;
 
 						// Token classification can't begin with "cpp"
 						// (except inactive code classification).
