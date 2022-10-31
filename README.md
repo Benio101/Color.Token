@@ -1,5 +1,5 @@
 # <img align="right" src="https://raw.githubusercontent.com/Benio101/Color.Token/2022/Color.Token/Logo.ico"> Color.Token
-[Visual Studio](https://visualstudio.microsoft.com) extension: Color C++ Tokens.
+[Visual Studio](https://visualstudio.microsoft.com) extension: Color C++ and [Unreal Engine](https://unrealengine.com) Tokens.
 
 ## Status
 | Branch | Build Status
@@ -14,7 +14,7 @@ Extension works in files of `ContentType` `"C/C++"`, _eg_ `.cpp` or `.h` files.
 
 ## Usage
 New entries will appear in `Tools` → `Options` → `Environment` → `Fonts and Colors` → `Text Editor`.<br>
-Each will begin with `C++ Token:` prefix.
+Each will begin with `C++ Token:` or `Unreal C++ Token` prefix.
 
 - Edit their color values, until you want to keep extension default ones (listed below).
 - If you don't want to change some token's color at all, set it's `Item foreground` value to `Automatic`.
@@ -30,7 +30,8 @@ Each will begin with `C++ Token:` prefix.
 New entry will appear in `Tools` → `Options` → `Color.Token`.
 
 ### Color macros (`bool`, default: `false`)
-Color macros which text is exact as tokens (_eg_ color `bool` macro defined by `stdbool.h` header in C).
+Color macros which text is exact as tokens (_eg_ color `bool` macro defined by `stdbool.h` header in C).<br>
+This option must be enabled in order to color [Unreal Engine](https://unrealengine.com) tokens.
 
 ### Note
 Note that editing option does not take immediate effect to keep performance.<br>
@@ -38,6 +39,7 @@ It requires reclassification, _eg_ triggered by editing corresponding part of co
 
 ## List of Tokens
 Extension exposes following Tokens for customization:
+- All macros, unconditionally, if option `Color macros` is enabled
 - All [keyword](https://en.cppreference.com/w/cpp/keyword)s, except:
   - Keywords that provide an [alternative way to represent standard tokens](https://en.cppreference.com/w/cpp/language/operator_alternative), _eg_ `xor_eq` (trigraphs are removed)
   - `register` keyword (it's unused)
@@ -45,6 +47,8 @@ Extension exposes following Tokens for customization:
   - Identifiers used as [`contract-level`](http://eel.is/c++draft/gram#nt:contract-level) in [Contract Attributes](https://en.cppreference.com/w/cpp/language/attributes/contract), except `default` (it's also a keyword)
 
 Full list of customizable Tokens, with their default colors:
+
+### C++
 
 | Token                              | Type      | Color       | RGB (0 – 255) |
 | :---                               | :---      | :---        | :---          |
@@ -140,6 +144,21 @@ Full list of customizable Tokens, with their default colors:
 | `volatile`                         | Keyword   | Blue        | 128, 176, 224 |
 | `wchar_t`                          | Type      | Lime        | 176, 224, 128 |
 | `while`                            | Flow      | Violet      | 128, 128, 224 |
+
+### [Unreal Engine](https://unrealengine.com)
+
+| Token                              | Type      | Color       | RGB (0 – 255) |
+| :---                               | :---      | :---        | :---          |
+| `FRotator`                         | Type      | Lime        | 176, 224, 128 |
+| `FString`                          | Type      | Lime        | 176, 224, 128 |
+| `FText`                            | Type      | Lime        | 176, 224, 128 |
+| `FTransform`                       | Type      | Lime        | 176, 224, 128 |
+| `FVector`                          | Type      | Lime        | 176, 224, 128 |
+| `FVector2D`                        | Type      | Lime        | 176, 224, 128 |
+| `int32`                            | Type      | Lime        | 176, 224, 128 |
+| `int8`                             | Type      | Lime        | 176, 224, 128 |
+
+If [Unreal Engine](https://unrealengine.com) tokens are not colorized, add Unreal macros to the [`cpp.hint`](https://learn.microsoft.com/en-us/cpp/build/reference/hint-files) file for Intellisense.
 
 ## Notes
 - `asm` can be preceded or followed by up to two underscore characters (U+005F, `_`), _eg_ `__asm`.

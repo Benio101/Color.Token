@@ -1,4 +1,4 @@
-﻿namespace Color.Token
+namespace Color.Token
 {
 	internal static class Meta
 	{
@@ -95,7 +95,15 @@
 			"void",
 			"volatile",
 			"wchar_t",
-			"while"
+			"while",
+			"FRotator",
+			"FString",
+			"FText",
+			"FTransform",
+			"FVector",
+			"FVector2D",
+			"int32",
+			"int8"
 		};
 	}
 }
