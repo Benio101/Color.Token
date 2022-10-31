@@ -96,14 +96,20 @@ namespace Color.Token
 			"volatile",
 			"wchar_t",
 			"while",
+			"int8",
+			"int16",
+			"int32",
+			"int64",
+			"uint8",
+			"uint16",
+			"uint32",
+			"uint64",
 			"FRotator",
 			"FString",
 			"FText",
 			"FTransform",
 			"FVector",
-			"FVector2D",
-			"int32",
-			"int8"
+			"FVector2D"
 		};
 	}
 }

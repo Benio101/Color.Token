@@ -473,6 +473,46 @@ namespace Color.Token
 		Definition_Token_while;
 
 		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.int8")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_int8;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.int16")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_int16;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.int32")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_int32;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.int64")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_int64;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.uint8")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_uint8;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.uint16")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_uint16;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.uint32")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_uint32;
+
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.uint64")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_uint64;
+
+		[Export(typeof(ClassificationTypeDefinition))]
 		[Name("Token.FRotator")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Token_FRotator;
@@ -501,16 +541,6 @@ namespace Color.Token
 		[Name("Token.FVector2D")]
 		private static readonly ClassificationTypeDefinition
 		Definition_Token_FVector2D;
-
-		[Export(typeof(ClassificationTypeDefinition))]
-		[Name("Token.int32")]
-		private static readonly ClassificationTypeDefinition
-		Definition_Token_int32;
-
-		[Export(typeof(ClassificationTypeDefinition))]
-		[Name("Token.int8")]
-		private static readonly ClassificationTypeDefinition
-		Definition_Token_int8;
 
 		#pragma warning restore IDE0051
 		#pragma warning restore 169
