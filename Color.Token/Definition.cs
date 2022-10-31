@@ -472,47 +472,47 @@ namespace Color.Token
 		private static readonly ClassificationTypeDefinition
 		Definition_Token_while;
 
-        [Export(typeof(ClassificationTypeDefinition))]
-        [Name("Token.FRotator")]
-        private static readonly ClassificationTypeDefinition
-        Definition_Token_FRotator;
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.FRotator")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_FRotator;
 
-        [Export(typeof(ClassificationTypeDefinition))]
-        [Name("Token.FString")]
-        private static readonly ClassificationTypeDefinition
-        Definition_Token_FString;
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.FString")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_FString;
 
-        [Export(typeof(ClassificationTypeDefinition))]
-        [Name("Token.FText")]
-        private static readonly ClassificationTypeDefinition
-        Definition_Token_FText;
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.FText")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_FText;
 
-        [Export(typeof(ClassificationTypeDefinition))]
-        [Name("Token.FTransform")]
-        private static readonly ClassificationTypeDefinition
-        Definition_Token_FTransform;
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.FTransform")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_FTransform;
 
-        [Export(typeof(ClassificationTypeDefinition))]
-        [Name("Token.FVector")]
-        private static readonly ClassificationTypeDefinition
-        Definition_Token_FVector;
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.FVector")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_FVector;
 
-        [Export(typeof(ClassificationTypeDefinition))]
-        [Name("Token.FVector2D")]
-        private static readonly ClassificationTypeDefinition
-        Definition_Token_FVector2D;
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.FVector2D")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_FVector2D;
 
-        [Export(typeof(ClassificationTypeDefinition))]
-        [Name("Token.int32")]
-        private static readonly ClassificationTypeDefinition
-        Definition_Token_int32;
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.int32")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_int32;
 
-        [Export(typeof(ClassificationTypeDefinition))]
-        [Name("Token.int8")]
-        private static readonly ClassificationTypeDefinition
-        Definition_Token_int8;
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name("Token.int8")]
+		private static readonly ClassificationTypeDefinition
+		Definition_Token_int8;
 
 		#pragma warning restore IDE0051
 		#pragma warning restore 169
-    }
+	}
 }
