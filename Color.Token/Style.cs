@@ -1893,5 +1893,25 @@ namespace Color.Token
             BackgroundCustomizable = true;
             ForegroundColor = Default.Colors.int32;
         }
-    }
+	}
+
+	// int8
+	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = "Token.int8")]
+	[Name("Token.int8")]
+	[BaseDefinition(PredefinedClassificationTypeNames.Keyword)]
+	[UserVisible(true)]
+	[Order(After = Priority.High)]
+	internal sealed class Format_Token_int8
+:
+	ClassificationFormatDefinition
+	{
+		public Format_Token_int8()
+		{
+			DisplayName = "Unreal C++ Token: \"int8\"";
+
+			BackgroundCustomizable = true;
+			ForegroundColor = Default.Colors.int8;
+		}
+	}
 }
