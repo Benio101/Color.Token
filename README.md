@@ -149,14 +149,20 @@ Full list of customizable Tokens, with their default colors:
 
 | Token                              | Type      | Color       | RGB (0 – 255) |
 | :---                               | :---      | :---        | :---          |
+| `int8`                             | Type      | Lime        | 176, 224, 128 |
+| `int16`                            | Type      | Lime        | 176, 224, 128 |
+| `int32`                            | Type      | Lime        | 176, 224, 128 |
+| `int64`                            | Type      | Lime        | 176, 224, 128 |
+| `uint8`                            | Type      | Lime        | 176, 224, 128 |
+| `uint16`                           | Type      | Lime        | 176, 224, 128 |
+| `uint32`                           | Type      | Lime        | 176, 224, 128 |
+| `uint64`                           | Type      | Lime        | 176, 224, 128 |
 | `FRotator`                         | Type      | Lime        | 176, 224, 128 |
 | `FString`                          | Type      | Lime        | 176, 224, 128 |
 | `FText`                            | Type      | Lime        | 176, 224, 128 |
 | `FTransform`                       | Type      | Lime        | 176, 224, 128 |
 | `FVector`                          | Type      | Lime        | 176, 224, 128 |
 | `FVector2D`                        | Type      | Lime        | 176, 224, 128 |
-| `int32`                            | Type      | Lime        | 176, 224, 128 |
-| `int8`                             | Type      | Lime        | 176, 224, 128 |
 
 If [Unreal Engine](https://unrealengine.com) tokens are not colorized, add Unreal macros to the [`cpp.hint`](https://learn.microsoft.com/en-us/cpp/build/reference/hint-files) file for Intellisense.
 
